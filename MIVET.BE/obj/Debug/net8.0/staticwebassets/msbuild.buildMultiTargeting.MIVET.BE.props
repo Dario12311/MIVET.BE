@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MIVET.BE.props" />
+</Project>

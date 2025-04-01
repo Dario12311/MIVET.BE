@@ -1,0 +1,6 @@
+@MIVET.BE_HostAddress = http://localhost:5272
+
+GET {{MIVET.BE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
