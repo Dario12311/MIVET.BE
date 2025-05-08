@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MIVET.BE.Transversales\MIVET.BE.Transversales.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "BJ1rrZYDy7Y=",
+  "dgSpecHash": "ocOypGcdlAI=",
   "success": true,
   "projectFilePath": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\dario\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
+    "C:\\Users\\dario\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\dario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

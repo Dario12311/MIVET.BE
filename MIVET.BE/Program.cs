@@ -1,48 +1,36 @@
-using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
+using MIVET.BE.Infraestructura.Persintence;
+using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Servicio;
+using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Repositorio;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Cargar la cadena de conexión desde user-secrets o appsettings
+var connectionString = builder.Configuration.GetConnectionString("Database");
 
+// Registrar DbContext con PooledFactory
+builder.Services.AddDbContext<MIVETDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
+builder.Services.AddScoped<IPersonaClienteBLL, PersonaClienteBLL>();
+builder.Services.AddScoped<IPersonaClienteDAL, PersonaClienteDAL>();
+builder.Services.AddScoped<IMascotaBLL, MascotaBLL>();
+builder.Services.AddScoped<IMascotasDAL, MascotaDAL>();
+builder.Services.AddScoped<IMedicoVeterinarioBLL, MedicoVeterinarioBLL>();
+builder.Services.AddScoped<IMedicoVeterinarioDAL, MedicoVeterinarioDAL>();
+builder.Services.AddScoped<IHistoriaClinicaMascotaBLL, HistoriaClinicaMascotaBLL>();
+builder.Services.AddScoped<IHistoriaClinicaMascotaDAL, HistoriaClinicaMascotaDAL>();
+
+// Agregar servicios a contenedor
 builder.Services.AddControllers();
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API de MIVET", Version = "v1" });
-
-    //configuracion para validar tokens
-
-    //c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    //{
-    //    In = ParameterLocation.Header,
-    //    Description = "Por favor ingrese el token JWT con el prefijo Bearer",
-    //    Name = "Authorization",
-    //    Type = SecuritySchemeType.ApiKey,
-    //    Scheme = "Bearer"
-    //});
-
-    //c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    //{
-    //    {
-    //        new OpenApiSecurityScheme
-    //        {
-    //            Reference = new OpenApiReference
-    //            {
-    //                Type = ReferenceType.SecurityScheme,
-    //                Id = "Bearer"
-    //            }
-    //        },
-    //        new string[] {}
-    //    }
-    //});
-});
-
 var app = builder.Build();
 
-
+// Configurar middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -50,9 +38,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();

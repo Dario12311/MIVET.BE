@@ -1,0 +1,205 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using MIVET.BE.Servicio;
+using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Transversales.Entidades;
+
+namespace MIVET.BE.Controllers.MedicoVeterinario
+{
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class MedicoVeterinarioControllers : ControllerBase
+    {
+        private readonly IMedicoVeterinarioBLL _medicoVeterinarioBLL;
+        public MedicoVeterinarioControllers(IMedicoVeterinarioBLL medicoVeterinarioBLL)
+        {
+            _medicoVeterinarioBLL = medicoVeterinarioBLL;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllAsync()
+        {
+            try
+            {
+                var result = await _medicoVeterinarioBLL.GetAllAsync();
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Error = "Error interno del servidor", Detalles = ex.Message });
+            }
+        }
+
+        [HttpGet("{numeroDocumento}")]
+        public async Task<IActionResult> GetByIdAsync(string numeroDocumento)
+        {
+            try
+            {
+                var result = await _medicoVeterinarioBLL.GetByIdAsync(numeroDocumento);
+                if (result == null)
+                {
+                    return NotFound(new { Error = "No se encontró el Medico Veterinario" });
+                }
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Error = "Error interno del servidor", Detalles = ex.Message });
+            }
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> InsertAsync([FromBody] MedicoVeterinarioDTO medicoVeterinarioDTO)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(new { Error = "Modelo inválido", Detalles = ModelState });
+                }
+
+                Console.WriteLine($"DTO recibido: {System.Text.Json.JsonSerializer.Serialize(medicoVeterinarioDTO)}");
+
+                var result = await _medicoVeterinarioBLL.InsertAsync(medicoVeterinarioDTO);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al insertar veterinario: {ex.Message}");
+
+                var innerExceptionMessage = "No inner exception";
+                var innerExceptionType = "None";
+                var innerExceptionStackTrace = "None";
+
+                if (ex.InnerException != null)
+                {
+                    innerExceptionMessage = ex.InnerException.Message;
+                    innerExceptionType = ex.InnerException.GetType().FullName;
+                    innerExceptionStackTrace = ex.InnerException.StackTrace;
+
+                    Console.WriteLine($"Inner Exception: {innerExceptionMessage}");
+                    Console.WriteLine($"Inner Exception Type: {innerExceptionType}");
+                    Console.WriteLine($"Inner Exception Stack Trace: {innerExceptionStackTrace}");
+                }
+
+                return StatusCode(500, new
+                {
+                    Error = "Error interno del servidor",
+                    Detalles = ex.Message,
+                    InnerException = innerExceptionMessage,
+                    InnerExceptionType = innerExceptionType,
+                    StackTrace = ex.StackTrace
+                });
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateAsync([FromBody] MedicoVeterinarioDTO medicoVeterinarioDTO)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(new { Error = "Modelo inválido", Detalles = ModelState });
+                }
+
+                Console.WriteLine($"DTO para actualizar: {System.Text.Json.JsonSerializer.Serialize(medicoVeterinarioDTO)}");
+
+                if (!string.IsNullOrEmpty(medicoVeterinarioDTO.AñoGraduacion) &&
+                    !System.Text.RegularExpressions.Regex.IsMatch(medicoVeterinarioDTO.AñoGraduacion, @"^\d{4}-\d{2}-\d{2}$"))
+                {
+                    return BadRequest(new
+                    {
+                        Error = "Formato de fecha inválido para AñoGraduacion",
+                        Detalles = "El formato debe ser yyyy-MM-dd"
+                    });
+                }
+
+                if (!string.IsNullOrEmpty(medicoVeterinarioDTO.FechaNacimiento) &&
+                    !System.Text.RegularExpressions.Regex.IsMatch(medicoVeterinarioDTO.FechaNacimiento, @"^\d{4}-\d{2}-\d{2}$"))
+                {
+                    return BadRequest(new
+                    {
+                        Error = "Formato de fecha inválido para FechaNacimiento",
+                        Detalles = "El formato debe ser yyyy-MM-dd"
+                    });
+                }
+
+                var result = await _medicoVeterinarioBLL.UpdateAsync(medicoVeterinarioDTO);
+                return Ok(result);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine($"Veterinario no encontrado: {ex.Message}");
+                return NotFound(new { Error = "No se encontró el veterinario", Detalles = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al actualizar veterinario: {ex.Message}");
+
+                var innerExceptionMessage = "No inner exception";
+                var innerExceptionType = "None";
+
+                if (ex.InnerException != null)
+                {
+                    innerExceptionMessage = ex.InnerException.Message;
+                    innerExceptionType = ex.InnerException.GetType().FullName;
+
+                    Console.WriteLine($"Inner Exception: {innerExceptionMessage}");
+                    Console.WriteLine($"Inner Exception Type: {innerExceptionType}");
+                }
+
+                return StatusCode(500, new
+                {
+                    Error = "Error interno del servidor",
+                    Detalles = ex.Message,
+                    InnerException = innerExceptionMessage
+                });
+            }
+        }
+
+        [HttpDelete("{numeroDocumento}")]
+        public async Task<ActionResult> DeleteAsync(string numeroDocumento)
+        {
+            try
+            {
+                Console.WriteLine($"Intentando deshabilitar veterinario con NumeroDocumento: {numeroDocumento}");
+
+                await _medicoVeterinarioBLL.DeleteAsync(numeroDocumento);
+
+                Console.WriteLine("Veterinario deshabilitado exitosamente");
+
+                return NoContent();
+            }
+            catch (KeyNotFoundException ex)
+            {
+                Console.WriteLine($"Veterinario no encontrado: {ex.Message}");
+                return NotFound(new { Error = "No se encontró el veterinario", Detalles = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al deshabilitar veterinario: {ex.Message}");
+
+                var innerExceptionMessage = "No inner exception";
+                var innerExceptionType = "None";
+
+                if (ex.InnerException != null)
+                {
+                    innerExceptionMessage = ex.InnerException.Message;
+                    innerExceptionType = ex.InnerException.GetType().FullName;
+
+                    Console.WriteLine($"Inner Exception: {innerExceptionMessage}");
+                    Console.WriteLine($"Inner Exception Type: {innerExceptionType}");
+                }
+
+                return StatusCode(500, new
+                {
+                    Error = "Error al deshabilitar al veterinario",
+                    Detalles = ex.Message,
+                    InnerException = innerExceptionMessage
+                });
+            }
+        }
+    }
+}
