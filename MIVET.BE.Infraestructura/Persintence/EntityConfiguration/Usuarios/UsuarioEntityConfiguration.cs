@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MIVET.BE.Infraestructura.Data;
-using MIVET.BE.Transversales.Entidades;
+using MIVET.BE.Transversales;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,50 +17,44 @@ public class UsuarioEntityConfiguration: IEntityTypeConfiguration<Usuarios>
 
         builder.ToTable(
                 DbConstants.Tables.Usuarios,
-                DbConstants.Schemas.Dbo)
-            .HasKey(x => x.UsuarioId);
+                DbConstants.Schemas.Dbo);
 
-        builder
-           .Property(x => x.UsuarioId)
-           .ValueGeneratedOnAdd();
+        builder.HasKey(e => e.UsuarioID);
+
+
+        builder.Property(e => e.UsuarioID)
+            .HasColumnName("UsuarioID")
+            .ValueGeneratedOnAdd()
+            .IsRequired();
 
         builder.Property(e => e.Identificacion)
-                     .HasColumnName("NumeroDocumentoCliente");
+            .HasColumnName("Identificacion")
+            .HasMaxLength(20)
+            .IsRequired();
 
-        builder.HasOne<PersonaCliente>()
-            .WithMany()
-            .HasForeignKey(e => e.NumeroDocumento)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        builder
-            .Property(x => x.NombreUsuario)
-            .HasMaxLength(60)
+        builder.Property(e => e.NombreUsuario)
+            .HasColumnName("NombreUsuario")
+            .HasMaxLength(50)
             .IsRequired();
 
         builder.Property(e => e.Password)
-          .HasColumnName("Password")
-          .HasMaxLength(60)
-          .IsRequired();
+            .HasColumnName("Password")
+            .HasMaxLength(50)
+            .IsRequired();
+
+        builder.Property(e => e.Estado)
+            .HasColumnName("Estado")
+            .HasMaxLength(1)
+            .IsRequired();
 
         builder.Property(e => e.RolId)
-           .HasColumnName("RolId")
-           .IsRequired();
+            .HasColumnName("RolId")
+            .IsRequired();
 
         builder.HasOne<Rol>()
             .WithMany()
             .HasForeignKey(e => e.RolId)
             .OnDelete(DeleteBehavior.Restrict);
-
-        builder.Property(x => x.NumeroDocumento).HasColumnName("NumeroDocumentoVeterinario");
-
-        builder.HasOne<MedicoVeterinario>().WithMany()
-            .HasForeignKey(e => e.NumeroDocumento)
-            .OnDelete(DeleteBehavior.Restrict);
-
-        builder.Property(e => e.Estado)
-           .HasColumnName("Estado")
-           .HasMaxLength(1)
-           .IsRequired();
 
     }
 

@@ -6,6 +6,7 @@ using MIVET.BE.Transversales.Entidades.MaritalStatus;
 using MIVET.BE.Transversales.Entidades.Country;
 using MIVET.BE.Infraestructura.Data;
 using MIVET.BE.Transversales.Common;
+using MIVET.BE.Transversales;
 
 namespace MIVET.BE.Infraestructura.Persintence;
 

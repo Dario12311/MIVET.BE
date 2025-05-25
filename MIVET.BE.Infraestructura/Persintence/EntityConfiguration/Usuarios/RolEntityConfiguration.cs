@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MIVET.BE.Infraestructura.Data;
 using MIVET.BE.Transversales.Common;
-using MIVET.BE.Transversales.Entidades;
+using MIVET.BE.Transversales;
 using System;
 using System.Collections.Generic;
 using System.Linq;

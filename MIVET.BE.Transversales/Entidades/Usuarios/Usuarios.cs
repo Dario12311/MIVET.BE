@@ -2,18 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace MIVET.BE.Transversales.Entidades;
+namespace MIVET.BE.Transversales;
 
 public class Usuarios
 {
-    public int UsuarioId { get; set; }
-    public string Identificacion { get; set; } 
+    [JsonIgnore]
+    public int UsuarioID { get; set; }
+    public string Identificacion { get; set; }
     public string NombreUsuario { get; set; }
     public string Password { get; set; }
-    public int RolId { get; set; }
-    public string NumeroDocumento { get; set; }
     public char Estado { get; set; }
+    public int RolId { get; set; }
 
 }

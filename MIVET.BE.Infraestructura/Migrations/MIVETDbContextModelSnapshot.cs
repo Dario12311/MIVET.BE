@@ -443,27 +443,6 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.ToTable("PersonaCliente", "dbo");
                 });
 
-            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Rol", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("Nombre")
-                        .IsUnique();
-
-                    b.ToTable("Rol", "dbo");
-                });
-
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.TipoDocumento", b =>
                 {
                     b.Property<int>("Id")
@@ -485,13 +464,35 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.ToTable("TipoDocumento", "dbo");
                 });
 
-            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Usuarios", b =>
+            modelBuilder.Entity("MIVET.BE.Transversales.Rol", b =>
                 {
-                    b.Property<int>("UsuarioId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Nombre")
+                        .IsUnique();
+
+                    b.ToTable("Rol", "dbo");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Usuarios", b =>
+                {
+                    b.Property<int>("UsuarioID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("UsuarioID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UsuarioID"));
 
                     b.Property<string>("Estado")
                         .IsRequired()
@@ -501,32 +502,27 @@ namespace MIVET.BE.Infraestructura.Migrations
 
                     b.Property<string>("Identificacion")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("NumeroDocumentoCliente");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasColumnName("Identificacion");
 
                     b.Property<string>("NombreUsuario")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)");
-
-                    b.Property<string>("NumeroDocumento")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(20)")
-                        .HasColumnName("NumeroDocumentoVeterinario");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
+                        .HasColumnName("NombreUsuario");
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasMaxLength(60)
-                        .HasColumnType("nvarchar(60)")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)")
                         .HasColumnName("Password");
 
                     b.Property<int>("RolId")
                         .HasColumnType("int")
                         .HasColumnName("RolId");
 
-                    b.HasKey("UsuarioId");
-
-                    b.HasIndex("NumeroDocumento");
+                    b.HasKey("UsuarioID");
 
                     b.HasIndex("RolId");
 
@@ -593,21 +589,9 @@ namespace MIVET.BE.Infraestructura.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Usuarios", b =>
+            modelBuilder.Entity("MIVET.BE.Transversales.Usuarios", b =>
                 {
-                    b.HasOne("MIVET.BE.Transversales.Entidades.MedicoVeterinario", null)
-                        .WithMany()
-                        .HasForeignKey("NumeroDocumento")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("MIVET.BE.Transversales.Entidades.PersonaCliente", null)
-                        .WithMany()
-                        .HasForeignKey("NumeroDocumento")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("MIVET.BE.Transversales.Entidades.Rol", null)
+                    b.HasOne("MIVET.BE.Transversales.Rol", null)
                         .WithMany()
                         .HasForeignKey("RolId")
                         .OnDelete(DeleteBehavior.Restrict)
