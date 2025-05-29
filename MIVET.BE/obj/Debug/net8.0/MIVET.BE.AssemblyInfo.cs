@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af94284ad7a790004cc4a5d845ba31b57dfaff8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca15cc5900af126d3adbc7b88dab69bdd9e4e49b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

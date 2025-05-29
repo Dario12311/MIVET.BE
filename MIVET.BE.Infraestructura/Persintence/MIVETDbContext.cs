@@ -2,11 +2,12 @@
 using MediatR;
 using Microsoft.AspNetCore.Hosting;
 using MIVET.BE.Transversales.Entidades;
+using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Entidades.MaritalStatus;
 using MIVET.BE.Transversales.Entidades.Country;
 using MIVET.BE.Infraestructura.Data;
 using MIVET.BE.Transversales.Common;
-using MIVET.BE.Transversales;
+using MIVET.BE.Transversales.Core;
 
 namespace MIVET.BE.Infraestructura.Persintence;
 
@@ -27,6 +28,14 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<HistoriaClinicaMascota> HistoriaClinicaMascota { get; set; }
     public DbSet<Rol> Rol { get; set; }
     public DbSet<Usuarios> Usuarios { get; set; }
+    public DbSet<Productos> Productos { get; set; }
+    public DbSet<Consultas> Consultas { get; set; }
+    public DbSet<Dias> Dias{ get; set; }
+    public DbSet<EstadoCita> EstadoCita { get; set; }
+    public DbSet<LugarConsulta> LugarConsultas { get; set; }
+    public DbSet<TipoConsulta> TipoConsultas { get; set; }
+    public DbSet<HorasMedicas> HorasMedicas { get; set; }
+
 
     #endregion
 

@@ -28,6 +28,8 @@ var connectionString = builder.Configuration.GetConnectionString("Database");
 builder.Services.AddDbContext<MIVETDbContext>(options =>
     options.UseSqlServer(connectionString));
 
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 builder.Services.AddScoped<IPersonaClienteBLL, PersonaClienteBLL>();
 builder.Services.AddScoped<IPersonaClienteDAL, PersonaClienteDAL>();
 builder.Services.AddScoped<IMascotaBLL, MascotaBLL>();
@@ -38,6 +40,10 @@ builder.Services.AddScoped<IHistoriaClinicaMascotaBLL, HistoriaClinicaMascotaBLL
 builder.Services.AddScoped<IHistoriaClinicaMascotaDAL, HistoriaClinicaMascotaDAL>();
 builder.Services.AddScoped<IUsuariosBLL, UsuariosBLL>();
 builder.Services.AddScoped<IUsuariosDAL, UsuariosDAL>();
+builder.Services.AddScoped<IProductosBLL, ProductosBLL>();
+builder.Services.AddScoped<IProductosDAL, ProductosDAL>();
+builder.Services.AddScoped<IConsultasBLL, ConsultasBLL>();
+builder.Services.AddScoped<IConsultasDAL, ConsultasDAL>();
 
 // Agregar servicios a contenedor 
 builder.Services.AddControllers();

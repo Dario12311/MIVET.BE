@@ -5,6 +5,203 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/ConsultasControllers/GetAll": {
+      "get": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/GetCitasMedico/{MedicoID}": {
+      "get": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "parameters": [
+          {
+            "name": "MedicoID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/GetCitasPaciente/{PacienteID}": {
+      "get": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "parameters": [
+          {
+            "name": "PacienteID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/GetCitasTipoConsulta/{TipoConsulta}": {
+      "get": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "parameters": [
+          {
+            "name": "TipoConsulta",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/GetCitaById/{id}": {
+      "get": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/Create": {
+      "post": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/Update": {
+      "put": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Consultas"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ConsultasControllers/UpdateEstadoCitaId/{id}/{EstadoCitaID}": {
+      "patch": {
+        "tags": [
+          "ConsultasControllers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "EstadoCitaID",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/HistoriaClinicaMascotaControllers": {
       "get": {
         "tags": [
@@ -245,18 +442,19 @@
         }
       }
     },
-    "/api/MascotaControllers/{numeroDocumento}": {
+    "/api/MascotaControllers/{Id}": {
       "get": {
         "tags": [
           "MascotaControllers"
         ],
         "parameters": [
           {
-            "name": "numeroDocumento",
+            "name": "Id",
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string"
+              "type": "integer",
+              "format": "int32"
             }
           }
         ],
@@ -290,6 +488,54 @@
         }
       }
     },
+    "/api/MascotaControllers/dueno/{NumeroDocumento}": {
+      "get": {
+        "tags": [
+          "MascotaControllers"
+        ],
+        "parameters": [
+          {
+            "name": "NumeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MascotaConDuenoDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MascotaConDuenoDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MascotaConDuenoDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/MedicoVeterinarioControllers": {
       "get": {
         "tags": [
@@ -302,35 +548,6 @@
         }
       },
       "post": {
-        "tags": [
-          "MedicoVeterinarioControllers"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MedicoVeterinarioDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/MedicoVeterinarioDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/MedicoVeterinarioDTO"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
         "tags": [
           "MedicoVeterinarioControllers"
         ],
@@ -591,6 +808,199 @@
         }
       }
     },
+    "/api/ProductosControllers": {
+      "get": {
+        "tags": [
+          "ProductosControllers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Productos"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Productos"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Productos"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "ProductosControllers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "ProductosControllers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Productos"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductosControllers/{id}": {
+      "get": {
+        "tags": [
+          "ProductosControllers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Productos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ProductosControllers/disable/{id}": {
+      "delete": {
+        "tags": [
+          "ProductosControllers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/UsuarioControllers": {
       "get": {
         "tags": [
@@ -822,7 +1232,7 @@
         }
       }
     },
-    "/api/UsuarioControllers/ActualizarRoles": {
+    "/api/UsuarioControllers/AgregarRoles": {
       "patch": {
         "tags": [
           "UsuarioControllers"
@@ -890,17 +1300,58 @@
       "ActualizarRolesDTO": {
         "type": "object",
         "properties": {
-          "identificacion": {
-            "type": "string",
-            "nullable": true
+          "usuarioBase": {
+            "$ref": "#/components/schemas/Usuarios"
           },
-          "nuevosRoles": {
+          "rolesAAgregar": {
             "type": "array",
             "items": {
               "type": "integer",
               "format": "int32"
             },
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Consultas": {
+        "type": "object",
+        "properties": {
+          "citaMedicaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pacienteID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "medicoID": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoConsultaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "horasMedicasID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "estadoCitaID": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "fechaCita": {
+            "type": "string",
+            "format": "date"
+          },
+          "motivoConsulta": {
+            "type": "string",
+            "nullable": true
+          },
+          "lugarConsultaID": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -979,6 +1430,55 @@
             "nullable": true
           },
           "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MascotaConDuenoDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "especie": {
+            "type": "string",
+            "nullable": true
+          },
+          "raza": {
+            "type": "string",
+            "nullable": true
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "genero": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string"
+          },
+          "numeroDocumento": {
+            "type": "string",
+            "nullable": true
+          },
+          "primerNombreDueno": {
+            "type": "string",
+            "nullable": true
+          },
+          "primerApellidoDueno": {
+            "type": "string",
+            "nullable": true
+          },
+          "segundoApellidoDueno": {
             "type": "string",
             "nullable": true
           }
@@ -1071,11 +1571,11 @@
           },
           "añoGraduacion": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
           "fechaNacimiento": {
             "type": "string",
-            "nullable": true
+            "format": "date-time"
           },
           "nacionalidad": {
             "type": "string",
@@ -1180,6 +1680,44 @@
             "format": "date-time"
           },
           "estado": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Productos": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "precio": {
+            "type": "number",
+            "format": "double"
+          },
+          "stock": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categoria": {
+            "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagenUrl": {
             "type": "string",
             "nullable": true
           }

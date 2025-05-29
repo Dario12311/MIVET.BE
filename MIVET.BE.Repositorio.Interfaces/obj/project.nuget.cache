@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "ZodOFzKvqds=",
+  "dgSpecHash": "QNzAp/BkEcI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj",
+  "projectFilePath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dario\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\mediatr\\12.5.0\\mediatr.12.5.0.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.3\\microsoft.extensions.configuration.abstractions.9.0.3.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\dario\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.3\\microsoft.extensions.primitives.9.0.3.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.35.0\\microsoft.identitymodel.abstractions.6.35.0.nupkg.sha512",
     "C:\\Users\\dario\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.35.0\\microsoft.identitymodel.jsonwebtokens.6.35.0.nupkg.sha512",

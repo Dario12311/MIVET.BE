@@ -19,8 +19,8 @@ public class MedicoVeterinarioDTO
     public string Direccion { get; set; }
     public DateTime FechaRegistro { get; set; }
     public string UniversidadGraduacion { get; set; }
-    public string AñoGraduacion { get; set; }
-    public string FechaNacimiento { get; set; }
+    public DateTime AñoGraduacion { get; set; }
+    public DateTime FechaNacimiento { get; set; }
     public string nacionalidad { get; set; }
     public string genero { get; set; }
     public string ciudad { get; set; }

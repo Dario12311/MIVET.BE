@@ -20,6 +20,13 @@ public static class DbConstants
         public const string HistoriaClinicaMascota = nameof(HistoriaClinicaMascota);
         public const string Rol = nameof(Rol);
         public const string Usuarios = nameof(Usuarios);
+        public const string Productos = nameof(Productos);
+        public const string Consultas = nameof(Consultas);
+        public const string Dias = nameof(Dias);
+        public const string EstadoCita = nameof(EstadoCita);
+        public const string LugarConsulta = nameof(LugarConsulta);
+        public const string TipoConsulta = nameof(TipoConsulta);
+        public const string HorasMedicas = nameof(HorasMedicas);
 
         public const string EFMigrationsHistory = $"_{nameof(EFMigrationsHistory)}_";
 

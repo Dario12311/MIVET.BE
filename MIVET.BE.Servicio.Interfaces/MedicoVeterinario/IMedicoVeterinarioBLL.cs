@@ -11,8 +11,8 @@ public interface IMedicoVeterinarioBLL
 {
     Task<IEnumerable<MedicoVeterinario>> GetAllAsync();
     Task<MedicoVeterinario> GetByIdAsync(string numeroDocumento);
-    Task<MedicoVeterinarioDTO> InsertAsync(MedicoVeterinarioDTO medicoVeterinario);
+    Task<MedicoVeterinarioDTO> InsertAsync(MedicoVeterinarioDTO medicoVeterinarioDTO);
     Task DeleteAsync(string NumeroDocumento);
-    Task<MedicoVeterinarioDTO> UpdateAsync(MedicoVeterinarioDTO medicoVeterinarioDTO);
+    //Task<MedicoVeterinarioDTO> UpdateAsync(MedicoVeterinarioDTO medicoVeterinarioDTO);
 
 }

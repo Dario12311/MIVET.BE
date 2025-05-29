@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Entidades;
 using System.Threading.Tasks;
 
@@ -32,15 +33,15 @@ namespace MIVET.BE.Controllers.Mascota
             }
         }
 
-        [HttpGet("{numeroDocumento}")]
-        public async Task<IActionResult> GetByIdAsync(string numeroDocumento)
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetByIdAsync(int Id)
         {
             try
             {
-                var resultado = await _mascotaBLL.GetByIdAsync(numeroDocumento);
+                var resultado = await _mascotaBLL.GetByIdAsync(Id);
                 if (resultado == null)
                 {
-                    return NotFound($"No se encontró una mascota con el número de documento: {numeroDocumento}");
+                    return NotFound($"No se encontró una mascota con el número de documento: {Id}");
                 }
                 return Ok(resultado);
             }
@@ -88,6 +89,28 @@ namespace MIVET.BE.Controllers.Mascota
             {
                 await _mascotaBLL.DeleteAsync(id);
                 return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error Interno en el servidor: {ex.Message}");
+            }
+        }
+
+        [HttpGet("dueno/{NumeroDocumento}")]
+        public async Task<ActionResult<IEnumerable<MascotaConDuenoDTO>>> GetByDuenoIdAsync(string NumeroDocumento)
+        {
+            try
+            {
+                var resultado = await _mascotaBLL.GetByDuenoIdAsync(NumeroDocumento);
+                return Ok(resultado);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest($"Parámetro inválido: {ex.Message}");
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {

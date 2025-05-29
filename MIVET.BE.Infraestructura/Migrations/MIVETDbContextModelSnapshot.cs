@@ -22,6 +22,122 @@ namespace MIVET.BE.Infraestructura.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("MIVET.BE.Transversales.Consultas", b =>
+                {
+                    b.Property<int>("CitaMedicaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CitaMedicaID"));
+
+                    b.Property<int>("DiaID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EstadoCitaID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaCita")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("HorasMedicasID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LugarConsultaID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MedicoID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("MotivoConsulta")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<int>("PacienteID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoConsultaID")
+                        .HasColumnType("int");
+
+                    b.HasKey("CitaMedicaID");
+
+                    b.HasIndex("DiaID");
+
+                    b.HasIndex("EstadoCitaID");
+
+                    b.HasIndex("HorasMedicasID");
+
+                    b.HasIndex("LugarConsultaID");
+
+                    b.HasIndex("MedicoID");
+
+                    b.HasIndex("PacienteID");
+
+                    b.HasIndex("TipoConsultaID");
+
+                    b.ToTable("Consultas", (string)null);
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Dias", b =>
+                {
+                    b.Property<int>("DiaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("DiaID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DiaID"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(20)")
+                        .HasColumnName("Nombre");
+
+                    b.HasKey("DiaID");
+
+                    b.ToTable("Dias", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            DiaID = 1,
+                            Code = "LUNES"
+                        },
+                        new
+                        {
+                            DiaID = 2,
+                            Code = "MARTES"
+                        },
+                        new
+                        {
+                            DiaID = 3,
+                            Code = "MIÉRCOLES"
+                        },
+                        new
+                        {
+                            DiaID = 4,
+                            Code = "JUEVES"
+                        },
+                        new
+                        {
+                            DiaID = 5,
+                            Code = "VIERNES"
+                        },
+                        new
+                        {
+                            DiaID = 6,
+                            Code = "SÁBADO"
+                        },
+                        new
+                        {
+                            DiaID = 7,
+                            Code = "DOMINGO"
+                        });
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Country.Country", b =>
                 {
                     b.Property<int>("Id")
@@ -464,6 +580,287 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.ToTable("TipoDocumento", "dbo");
                 });
 
+            modelBuilder.Entity("MIVET.BE.Transversales.EstadoCita", b =>
+                {
+                    b.Property<int>("EstadoCitaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EstadoCitaID"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasColumnName("Code");
+
+                    b.HasKey("EstadoCitaID");
+
+                    b.ToTable("EstadoCita", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            EstadoCitaID = 1,
+                            Code = "PENDIENTE"
+                        },
+                        new
+                        {
+                            EstadoCitaID = 3,
+                            Code = "EN CURSO"
+                        },
+                        new
+                        {
+                            EstadoCitaID = 2,
+                            Code = "COMPLETADA"
+                        },
+                        new
+                        {
+                            EstadoCitaID = 4,
+                            Code = "CANCELADA"
+                        },
+                        new
+                        {
+                            EstadoCitaID = 5,
+                            Code = "NO ASISTIO"
+                        });
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.HorasMedicas", b =>
+                {
+                    b.Property<int>("HoraMedicaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HoraMedicaID"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.HasKey("HoraMedicaID");
+
+                    b.HasIndex("Code")
+                        .IsUnique();
+
+                    b.ToTable("HorasMedicas", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            HoraMedicaID = 1,
+                            Code = "6:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 2,
+                            Code = "6:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 3,
+                            Code = "7:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 4,
+                            Code = "7:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 5,
+                            Code = "8:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 6,
+                            Code = "8:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 7,
+                            Code = "9:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 8,
+                            Code = "9:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 9,
+                            Code = "10:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 10,
+                            Code = "10:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 11,
+                            Code = "11:00 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 12,
+                            Code = "11:30 AM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 13,
+                            Code = "12:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 14,
+                            Code = "12:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 15,
+                            Code = "1:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 16,
+                            Code = "1:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 17,
+                            Code = "2:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 18,
+                            Code = "2:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 19,
+                            Code = "3:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 20,
+                            Code = "3:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 21,
+                            Code = "4:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 22,
+                            Code = "4:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 23,
+                            Code = "5:00 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 24,
+                            Code = "5:30 PM"
+                        },
+                        new
+                        {
+                            HoraMedicaID = 25,
+                            Code = "6:00 PM"
+                        });
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.LugarConsulta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("LugarConsulta", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "CONSULTORIO 1 PRIMER PISO"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "CONSULTORIO 2 PRIMER PISO"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "CONSULTORIO 3 SEGUNDO PISO"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "CONSULTORIO 4 SEGUNDO PISO"
+                        });
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Productos", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
+                    b.Property<string>("ImagenUrl")
+                        .IsRequired()
+                        .HasMaxLength(30000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Productos", (string)null);
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Rol", b =>
                 {
                     b.Property<int>("Id")
@@ -483,6 +880,48 @@ namespace MIVET.BE.Infraestructura.Migrations
                         .IsUnique();
 
                     b.ToTable("Rol", "dbo");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.TipoConsulta", b =>
+                {
+                    b.Property<int>("TipoConsultaID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("TipoConsultaID");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoConsultaID"));
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)")
+                        .HasColumnName("Code");
+
+                    b.HasKey("TipoConsultaID");
+
+                    b.ToTable("TipoConsulta", "dbo");
+
+                    b.HasData(
+                        new
+                        {
+                            TipoConsultaID = 1,
+                            Code = "General"
+                        },
+                        new
+                        {
+                            TipoConsultaID = 2,
+                            Code = "Especializada"
+                        },
+                        new
+                        {
+                            TipoConsultaID = 3,
+                            Code = "Seguimiento"
+                        },
+                        new
+                        {
+                            TipoConsultaID = 4,
+                            Code = "Emergencia"
+                        });
                 });
 
             modelBuilder.Entity("MIVET.BE.Transversales.Usuarios", b =>
@@ -527,6 +966,51 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.HasIndex("RolId");
 
                     b.ToTable("Usuarios", "dbo");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Consultas", b =>
+                {
+                    b.HasOne("MIVET.BE.Transversales.Dias", null)
+                        .WithMany()
+                        .HasForeignKey("DiaID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.EstadoCita", null)
+                        .WithMany()
+                        .HasForeignKey("EstadoCitaID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.HorasMedicas", null)
+                        .WithMany()
+                        .HasForeignKey("HorasMedicasID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.LugarConsulta", null)
+                        .WithMany()
+                        .HasForeignKey("LugarConsultaID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.MedicoVeterinario", null)
+                        .WithMany()
+                        .HasForeignKey("MedicoID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Mascota", null)
+                        .WithMany()
+                        .HasForeignKey("PacienteID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.TipoConsulta", null)
+                        .WithMany()
+                        .HasForeignKey("TipoConsultaID")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HistoriaClinicaMascota", b =>

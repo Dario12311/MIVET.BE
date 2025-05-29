@@ -11,3 +11,16 @@ C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.B
 C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\refint\MIVET.BE.Transversales.dll
 C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.pdb
 C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\ref\MIVET.BE.Transversales.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\bin\Debug\net8.0\MIVET.BE.Transversales.deps.json
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\bin\Debug\net8.0\MIVET.BE.Transversales.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\bin\Debug\net8.0\MIVET.BE.Transversales.pdb
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.csproj.AssemblyReference.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.AssemblyInfoInputs.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.AssemblyInfo.cs
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.csproj.CoreCompileInputs.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.sourcelink.json
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\refint\MIVET.BE.Transversales.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\MIVET.BE.Transversales.pdb
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Transversales\obj\Debug\net8.0\ref\MIVET.BE.Transversales.dll

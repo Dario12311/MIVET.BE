@@ -145,18 +145,34 @@ public class UsuariosDAL: IUsuariosDAL
 
     public async Task AgregarRolesUsuarioAsync(Usuarios usuarioBase, List<int> rolesAAgregar)
     {
+        // Obtener la contraseña encriptada actual del usuario
+        var usuarioExistente = await _context.Usuarios
+            .FirstOrDefaultAsync(u => u.Identificacion == usuarioBase.Identificacion);
+
+        if (usuarioExistente == null)
+            throw new Exception("El usuario base no existe.");
+
+        string passwordEncriptada = usuarioExistente.Password;
+
         foreach (var rolId in rolesAAgregar)
         {
-            var nuevoUsuario = new Usuarios
-            {
-                Identificacion = usuarioBase.Identificacion,
-                NombreUsuario = usuarioBase.NombreUsuario,
-                Password = usuarioBase.Password,
-                Estado = usuarioBase.Estado,
-                RolId = rolId
-            };
+            // Verifica que NO exista ya ese rol para ese usuario
+            var existe = await _context.Usuarios
+                .AnyAsync(u => u.Identificacion == usuarioBase.Identificacion && u.RolId == rolId);
 
-            await _context.Usuarios.AddAsync(nuevoUsuario);
+            if (!existe)
+            {
+                var nuevoUsuario = new Usuarios
+                {
+                    Identificacion = usuarioBase.Identificacion,
+                    NombreUsuario = usuarioBase.NombreUsuario,
+                    Password = passwordEncriptada, // Usar la contraseña encriptada existente
+                    Estado = usuarioBase.Estado,
+                    RolId = rolId
+                };
+
+                await _context.Usuarios.AddAsync(nuevoUsuario);
+            }
         }
 
         await _context.SaveChangesAsync();

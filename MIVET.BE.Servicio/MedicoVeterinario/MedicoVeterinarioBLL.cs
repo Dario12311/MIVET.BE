@@ -37,8 +37,8 @@ public class MedicoVeterinarioBLL : IMedicoVeterinarioBLL
         return await _medicoVeterinarioDAL.InsertAsync(medicoVeterinarioDTO);
     }
 
-    public async Task<MedicoVeterinarioDTO> UpdateAsync(MedicoVeterinarioDTO medicoVeterinarioDTO)
-    {
-        return await _medicoVeterinarioDAL.UpdateAsync(medicoVeterinarioDTO);
-    }
+    //public async Task<MedicoVeterinarioDTO> UpdateAsync(MedicoVeterinarioDTO medicoVeterinarioDTO)
+    //{
+    //    return await _medicoVeterinarioDAL.UpdateAsync(medicoVeterinarioDTO);
+    //}
 }

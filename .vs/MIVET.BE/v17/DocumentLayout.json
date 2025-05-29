@@ -1,82 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\",
+  "WorkspaceRootPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|solutionrelative:mivet.be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be\\controllers\\medicoveterinario\\medicoveterinariocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|solutionrelative:mivet.be\\controllers\\medicoveterinario\\medicoveterinariocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\persintence\\entityconfiguration\\personacliente\\personaclienteentityconfiguarion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\persintence\\entityconfiguration\\personacliente\\personaclienteentityconfiguarion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7253D5F-E431-4C5E-8144-E394FF0D7783}|MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be.servicio\\medicoveterinario\\medicoveterinariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7253D5F-E431-4C5E-8144-E394FF0D7783}|MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj|solutionrelative:mivet.be.servicio\\medicoveterinario\\medicoveterinariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be\\controllers\\usuarios\\usuariocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|solutionrelative:mivet.be\\controllers\\usuarios\\usuariocontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{937335C8-1F87-45F4-A608-950C454FB1D1}|MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be.servicio.interfaces\\medicoveterinario\\imedicoveterinariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{937335C8-1F87-45F4-A608-950C454FB1D1}|MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj|solutionrelative:mivet.be.servicio.interfaces\\medicoveterinario\\imedicoveterinariobll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AE2660E-E933-4314-9B9E-4BC3823D1B4B}|MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be.repositorio.interfaces\\medicoveterinario\\imedicoveterinariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AE2660E-E933-4314-9B9E-4BC3823D1B4B}|MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj|solutionrelative:mivet.be.repositorio.interfaces\\medicoveterinario\\imedicoveterinariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|solutionrelative:mivet.be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D55DC4DF-CDB5-407A-B578-6658C6A0C8EB}|MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be.repositorio\\medicoveterinario\\medicoveterinariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D55DC4DF-CDB5-407A-B578-6658C6A0C8EB}|MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj|solutionrelative:mivet.be.repositorio\\medicoveterinario\\medicoveterinariodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D55DC4DF-CDB5-407A-B578-6658C6A0C8EB}|MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.repositorio\\usuarios\\usuariosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D55DC4DF-CDB5-407A-B578-6658C6A0C8EB}|MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj|solutionrelative:mivet.be.repositorio\\usuarios\\usuariosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be.transversales\\entidades\\medicoveterinario\\medicoveterinariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\medicoveterinario\\medicoveterinariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AE2660E-E933-4314-9B9E-4BC3823D1B4B}|MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.repositorio.interfaces\\usuarios\\iusuariosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1AE2660E-E933-4314-9B9E-4BC3823D1B4B}|MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj|solutionrelative:mivet.be.repositorio.interfaces\\usuarios\\iusuariosdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\encriptacion\\encrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\encriptacion\\encrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{937335C8-1F87-45F4-A608-950C454FB1D1}|MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.servicio.interfaces\\usuarios\\iusuariosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{937335C8-1F87-45F4-A608-950C454FB1D1}|MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj|solutionrelative:mivet.be.servicio.interfaces\\usuarios\\iusuariosbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\migrations\\20250521034924_eliminarcolumnausuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\migrations\\20250521034924_eliminarcolumnausuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\persintence\\entityconfiguration\\usuarios\\usuarioentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\persintence\\entityconfiguration\\usuarios\\usuarioentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\actualizarrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\actualizarrolesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\resetpassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\persintence\\mivetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\persintence\\mivetdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.transversales\\entidades\\usuarios\\rolll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7600CE99-B9FE-4CF3-B848-69515AF2B278}|MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj|solutionrelative:mivet.be.transversales\\entidades\\usuarios\\rolll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\persintence\\entityconfiguration\\usuarios\\rolentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\persintence\\entityconfiguration\\usuarios\\rolentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|c:\\users\\dario\\onedrive\\documentos\\ingenieria de software\\software mivet\\mivet.be\\mivet.be.infraestructura\\migrations\\20250428060310_tablasusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E44A44B-0594-452C-9208-E75AC11240F3}|MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj|solutionrelative:mivet.be.infraestructura\\migrations\\20250428060310_tablasusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|c:\\users\\dario\\documents\\mivet proyecto\\mivet.be\\mivet.be\\controllers\\personacliente\\personaclientecontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CCFE062-A0A5-4EC6-82A0-ABC4E867EC00}|MIVET.BE\\MIVET.BE.csproj|solutionrelative:mivet.be\\controllers\\personacliente\\personaclientecontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -85,241 +37,99 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 291,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersonaClienteEntityConfiguarion.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\PersonaCliente\\PersonaClienteEntityConfiguarion.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\PersonaCliente\\PersonaClienteEntityConfiguarion.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\PersonaCliente\\PersonaClienteEntityConfiguarion.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\PersonaCliente\\PersonaClienteEntityConfiguarion.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAIwHwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IMedicoVeterinarioDAL.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioDAL.cs",
+              "RelativeDocumentMoniker": "MIVET.BE.Repositorio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioDAL.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioDAL.cs",
+              "RelativeToolTip": "MIVET.BE.Repositorio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioDAL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T22:07:29.73Z"
+              "WhenOpened": "2025-05-29T22:08:25.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\Program.cs",
-              "RelativeDocumentMoniker": "MIVET.BE\\Program.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\Program.cs",
-              "RelativeToolTip": "MIVET.BE\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Title": "MedicoVeterinarioControllers.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "RelativeDocumentMoniker": "MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "RelativeToolTip": "MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHcAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T13:36:43.42Z",
+              "WhenOpened": "2025-05-29T20:33:38.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MedicoVeterinarioDAL.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
+              "RelativeDocumentMoniker": "MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
+              "RelativeToolTip": "MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAAAKUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T20:29:30.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IMedicoVeterinarioBLL.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
+              "RelativeDocumentMoniker": "MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
+              "RelativeToolTip": "MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:09:54.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicoVeterinarioBLL.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
+              "RelativeDocumentMoniker": "MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
+              "RelativeToolTip": "MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:10:12.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonaClienteControllers.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\PersonaCliente\\PersonaClienteControllers.cs",
+              "RelativeDocumentMoniker": "MIVET.BE\\Controllers\\PersonaCliente\\PersonaClienteControllers.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\PersonaCliente\\PersonaClienteControllers.cs",
+              "RelativeToolTip": "MIVET.BE\\Controllers\\PersonaCliente\\PersonaClienteControllers.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T22:02:56.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "UsuariosDAL.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Repositorio\\Usuarios\\UsuariosDAL.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Repositorio\\Usuarios\\UsuariosDAL.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Repositorio\\Usuarios\\UsuariosDAL.cs",
-              "RelativeToolTip": "MIVET.BE.Repositorio\\Usuarios\\UsuariosDAL.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAswHwAAAAoAAAAAAAAAA==",
+              "Title": "MedicoVeterinarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\MedicoVeterinario\\MedicoVeterinarioDTO.cs",
+              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\MedicoVeterinario\\MedicoVeterinarioDTO.cs",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\MedicoVeterinario\\MedicoVeterinarioDTO.cs",
+              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\MedicoVeterinario\\MedicoVeterinarioDTO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:56:08.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUsuariosDAL.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\Usuarios\\IUsuariosDAL.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Repositorio.Interfaces\\Usuarios\\IUsuariosDAL.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\Usuarios\\IUsuariosDAL.cs",
-              "RelativeToolTip": "MIVET.BE.Repositorio.Interfaces\\Usuarios\\IUsuariosDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:56:02.141Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Usuarios.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\Usuarios.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\Usuarios.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\Usuarios.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\Usuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:51:33.468Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\LoginRequest.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\LoginRequest.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:42:19.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\UsuarioDTO.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:02:07.129Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Encrypt.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Encriptacion\\Encrypt.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Encriptacion\\Encrypt.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Encriptacion\\Encrypt.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Encriptacion\\Encrypt.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T05:51:41.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioControllers.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\Controllers\\Usuarios\\UsuarioControllers.cs",
-              "RelativeDocumentMoniker": "MIVET.BE\\Controllers\\Usuarios\\UsuarioControllers.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\Controllers\\Usuarios\\UsuarioControllers.cs",
-              "RelativeToolTip": "MIVET.BE\\Controllers\\Usuarios\\UsuarioControllers.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAkwCUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:32:56.626Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\appsettings.json",
-              "RelativeDocumentMoniker": "MIVET.BE\\appsettings.json",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE\\appsettings.json",
-              "RelativeToolTip": "MIVET.BE\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T12:58:37.021Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IUsuariosBLL.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\Usuarios\\IUsuariosBLL.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Servicio.Interfaces\\Usuarios\\IUsuariosBLL.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\Usuarios\\IUsuariosBLL.cs",
-              "RelativeToolTip": "MIVET.BE.Servicio.Interfaces\\Usuarios\\IUsuariosBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:18:04.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UsuarioEntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\UsuarioEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\UsuarioEntityConfiguration.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\UsuarioEntityConfiguration.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\UsuarioEntityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:52:58.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "20250521034924_eliminarcolumnaUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Migrations\\20250521034924_eliminarcolumnaUsuarios.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Migrations\\20250521034924_eliminarcolumnaUsuarios.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Migrations\\20250521034924_eliminarcolumnaUsuarios.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Migrations\\20250521034924_eliminarcolumnaUsuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:49:25.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ActualizarRolesDTO.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\ActualizarRolesDTO.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\ActualizarRolesDTO.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\ActualizarRolesDTO.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\ActualizarRolesDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:39:44.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ResetPassword.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\ResetPassword.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\ResetPassword.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\ResetPassword.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\ResetPassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T03:28:53.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "MIVETDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\MIVETDbContext.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Persintence\\MIVETDbContext.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\MIVETDbContext.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Persintence\\MIVETDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:55:39.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Rolll.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\Rolll.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Transversales\\Entidades\\Usuarios\\Rolll.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Transversales\\Entidades\\Usuarios\\Rolll.cs",
-              "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Usuarios\\Rolll.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:52:45.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "RolEntityConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\RolEntityConfiguration.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\RolEntityConfiguration.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\RolEntityConfiguration.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Persintence\\EntityConfiguration\\Usuarios\\RolEntityConfiguration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:55:30.015Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "20250428060310_TablasUsuarios.cs",
-              "DocumentMoniker": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Migrations\\20250428060310_TablasUsuarios.cs",
-              "RelativeDocumentMoniker": "MIVET.BE.Infraestructura\\Migrations\\20250428060310_TablasUsuarios.cs",
-              "ToolTip": "C:\\Users\\dario\\OneDrive\\Documentos\\Ingenieria de Software\\Software MIVET\\MIVET.BE\\MIVET.BE.Infraestructura\\Migrations\\20250428060310_TablasUsuarios.cs",
-              "RelativeToolTip": "MIVET.BE.Infraestructura\\Migrations\\20250428060310_TablasUsuarios.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T02:50:32.41Z"
+              "WhenOpened": "2025-05-29T22:15:40.218Z",
+              "EditorCaption": ""
             }
           ]
         }

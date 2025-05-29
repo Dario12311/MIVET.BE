@@ -16,6 +16,7 @@ public interface IUsuariosBLL
     Task<Usuarios> UpdateUsuarioAsync(Usuarios usuario);
     Task DeleteUsuarioAsync(string id);
     Task<string> LoginAsync(string identificacion, string password, IConfiguration config);
-    Task<bool> ActualizarRolesUsuarioAsync(string identificacion, List<int> nuevosRoles);
+    Task AgregarRolesUsuarioAsync(Usuarios usuarioBase, List<int> rolesAAgregar);
     Task<bool> ResetPasswordAsync(ResetPassword dto);
+
 }

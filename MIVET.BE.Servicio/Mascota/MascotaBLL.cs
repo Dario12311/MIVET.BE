@@ -1,5 +1,6 @@
 ﻿using MIVET.BE.Repositorio.Interfaces;
 using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Entidades;
 using System;
 using System.Collections.Generic;
@@ -22,14 +23,19 @@ public class MascotaBLL : IMascotaBLL
          await _mascotaDAL.DeleteAsync(id);
     }
 
-    public async Task<IEnumerable<Mascota>> GetAllAsync()
+    public async Task<IEnumerable<MascotaConDuenoDTO>> GetAllAsync()
     {
         return await _mascotaDAL.GetAllAsync();
     }
 
-    public Task<Mascota> GetByIdAsync(string numeroDocumento)
+    public async Task<IEnumerable<MascotaConDuenoDTO>> GetByDuenoIdAsync(string NumeroDocumento)
     {
-        return _mascotaDAL.GetByIdAsync(numeroDocumento);
+        return await _mascotaDAL.GetByDuenoIdAsync(NumeroDocumento);
+    }
+
+    public Task<MascotaConDuenoDTO> GetByIdAsync(int Id)
+    {
+        return _mascotaDAL.GetByIdAsync(Id);
     }
 
     public async Task<MascotaDTO> InsertAsync(MascotaDTO mascotaDTO)
@@ -41,4 +47,6 @@ public class MascotaBLL : IMascotaBLL
     {
         return await _mascotaDAL.UpdateAsync(mascotaDTO);
     }
+
+
 }

@@ -76,15 +76,15 @@ namespace MIVET.BE.Controllers
             }
         }
 
-        [HttpPatch("ActualizarRoles")]
-        public async Task<IActionResult> ActualizarRoles([FromBody] ActualizarRolesDTO request)
+        [HttpPatch("AgregarRoles")]
+        public async Task<IActionResult> AgregarRoles([FromBody] ActualizarRolesDTO request)
         {
-            var resultado = await _usuarioBLL.ActualizarRolesUsuarioAsync(request.Identificacion, request.NuevosRoles);
+            if (request == null || request.UsuarioBase == null || request.RolesAAgregar == null || !request.RolesAAgregar.Any())
+                return BadRequest(new { mensaje = "Datos de entrada inválidos." });
 
-            if (!resultado)
-                return NotFound(new { mensaje = "Usuario no encontrado" });
+            await _usuarioBLL.AgregarRolesUsuarioAsync(request.UsuarioBase, request.RolesAAgregar);
 
-            return Ok(new { mensaje = "Roles actualizados correctamente" });
+            return Ok(new { mensaje = "Roles agregados correctamente" });
         }
 
         [HttpPatch("ResetPassword")]

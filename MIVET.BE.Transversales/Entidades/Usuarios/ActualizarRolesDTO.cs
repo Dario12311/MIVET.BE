@@ -1,7 +1,9 @@
-﻿namespace MedicalWeb.BE.Transversales;
+﻿using MIVET.BE.Transversales;
+
+namespace MedicalWeb.BE.Transversales;
 
 public class ActualizarRolesDTO
 {
-    public string Identificacion { get; set; }
-    public List<int> NuevosRoles { get; set; }
+    public Usuarios UsuarioBase { get; set; }
+    public List<int> RolesAAgregar { get; set; }
 }

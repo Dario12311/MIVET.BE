@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace MIVET.BE.Servicio;
 
-public class UsuariosBLL: IUsuariosBLL
+public class UsuariosBLL : IUsuariosBLL
 {
     private readonly IUsuariosDAL _usuarioDAL;
     private readonly IConfiguration _configuration;
@@ -90,38 +90,15 @@ public class UsuariosBLL: IUsuariosBLL
         return JwtConfiguration.GetToken(usuarioDTO, config);
     }
 
-    public async Task<bool> ActualizarRolesUsuarioAsync(string identificacion, List<int> nuevosRoles)
-    {
-        // Obtener todos los usuarios con la misma Identificación
-        var usuariosExistentes = await _usuarioDAL.ObtenerUsuariosPorIdentificacionAsync(identificacion);
 
-        if (!usuariosExistentes.Any())
-            return false;
-
-        var rolesActuales = usuariosExistentes.Select(u => u.RolId).ToList();
-
-        // Determinar roles a eliminar (los que ya no están en la nueva lista)
-        var rolesAEliminar = rolesActuales.Except(nuevosRoles).ToList();
-
-        // Determinar roles a agregar (los nuevos que antes no estaban)
-        var rolesAAgregar = nuevosRoles.Except(rolesActuales).ToList();
-
-        // Eliminar solo los registros con roles obsoletos
-        if (rolesAEliminar.Any())
-            await _usuarioDAL.EliminarRolesUsuarioAsync(identificacion, rolesAEliminar);
-
-        // Agregar nuevos roles sin perder la información del usuario
-        if (rolesAAgregar.Any())
-        {
-            var usuarioBase = usuariosExistentes.First(); // Tomamos un usuario de referencia para mantener los datos
-            await _usuarioDAL.AgregarRolesUsuarioAsync(usuarioBase, rolesAAgregar);
-        }
-
-        return true; // Operación exitosa
-    }
 
     public async Task<bool> ResetPasswordAsync(ResetPassword dto)
     {
         return await _usuarioDAL.ResetPasswordAsync(dto.Identificacion, dto.NuevaPassword);
+    }
+
+    public async Task AgregarRolesUsuarioAsync(Usuarios usuarioBase, List<int> rolesAAgregar)
+    {
+        await _usuarioDAL.AgregarRolesUsuarioAsync(usuarioBase, rolesAAgregar);
     }
 }
