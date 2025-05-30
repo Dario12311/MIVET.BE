@@ -50,8 +50,7 @@
               "RelativeToolTip": "MIVET.BE.Repositorio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioDAL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T22:08:25.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T22:08:25.817Z"
             },
             {
               "$type": "Document",
@@ -59,9 +58,9 @@
               "Title": "MedicoVeterinarioControllers.cs",
               "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
               "RelativeDocumentMoniker": "MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
-              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs*",
-              "RelativeToolTip": "MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs*",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAAAIIAAAALAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "RelativeToolTip": "MIVET.BE\\Controllers\\MedicoVeterinario\\MedicoVeterinarioControllers.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAAAHgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-29T20:33:38.217Z",
               "EditorCaption": ""
@@ -72,12 +71,11 @@
               "Title": "MedicoVeterinarioDAL.cs",
               "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
               "RelativeDocumentMoniker": "MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
-              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs*",
-              "RelativeToolTip": "MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs*",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
+              "RelativeToolTip": "MIVET.BE.Repositorio\\MedicoVeterinario\\MedicoVeterinarioDAL.cs",
               "ViewState": "AgIAAJsAAAAAAAAAAAAAAKUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T20:29:30.639Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T20:29:30.639Z"
             },
             {
               "$type": "Document",
@@ -85,12 +83,11 @@
               "Title": "IMedicoVeterinarioBLL.cs",
               "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
               "RelativeDocumentMoniker": "MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
-              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs*",
-              "RelativeToolTip": "MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs*",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
+              "RelativeToolTip": "MIVET.BE.Servicio.Interfaces\\MedicoVeterinario\\IMedicoVeterinarioBLL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T22:09:54.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T22:09:54.36Z"
             },
             {
               "$type": "Document",
@@ -98,12 +95,11 @@
               "Title": "MedicoVeterinarioBLL.cs",
               "DocumentMoniker": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
               "RelativeDocumentMoniker": "MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
-              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs*",
-              "RelativeToolTip": "MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs*",
+              "ToolTip": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
+              "RelativeToolTip": "MIVET.BE.Servicio\\MedicoVeterinario\\MedicoVeterinarioBLL.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T22:10:12.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T22:10:12.107Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "MIVET.BE\\Controllers\\PersonaCliente\\PersonaClienteControllers.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwDkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T22:02:56.52Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T22:02:56.52Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\MedicoVeterinario\\MedicoVeterinarioDTO.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T22:15:40.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T22:15:40.218Z"
             }
           ]
         }
