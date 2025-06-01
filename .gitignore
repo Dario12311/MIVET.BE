@@ -1,63 +1,71 @@
-# Archivos de compilación
+# Build results
 bin/
 obj/
 out/
-*.dll
-*.exe
-*.app
-*.log
 
-# Archivos de usuario y del IDE
+# VS cache y settings
 .vs/
-*.suo
 *.user
+*.suo
 *.userosscache
 *.sln.docstates
 
-# Archivos de Rider/JetBrains
-.idea/
-
-# Archivos de configuración del entorno
-launchSettings.json
-
-# Archivos de depuración
-*.pdb
-*.mdb
-
-# Datos temporales del sistema
+# Archivos temporales y de entorno
 *.db
 *.db-shm
 *.db-wal
-*.vsidx
+*.cache
+*.log
 *.tmp
 
-# Archivos de evaluación del proyecto
+# Archivos generados por compilación
+*.dll
+*.exe
+*.pdb
+*.mdb
+*.app
+*.js.map
+*.deps.json
+*.runtimeconfig.json
+*.sourceinfo
+*.sourcelink.json
+
+# Archivos de diseño y configuración de IDE
+DocumentLayout*.json
+*.vsidx
 *.v9.bin
 
-# Backup de diseño de documentos
-DocumentLayout*.json
+# Configuración de proyectos
+project.lock.json
+project.fragment.lock.json
+*.csproj.AssemblyReference.cache
+*.AssemblyInfoInputs.cache
+*.AssemblyInfo.cs
 
-# Publicaciones y paquetes
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# Archivos de Razor/MVC temporales
+*.cshtml.g.cs
+*.g.cs
+*.razor.g.cs
+*.razor.css
+
+# Paquetes y publicación
+artifacts/
 publish/
 *.nupkg
 *.snupkg
 
-# Configuración de paquetes y restauración
+# Archivos NuGet
+.nuget/
 packages/
-project.lock.json
-project.fragment.lock.json
-artifacts/
-
-# Archivos de configuración de GitHub Copilot
-.vscode/
-copilot*
-
-# Archivos generados por dotnet
-*.deps.json
-*.runtimeconfig.json
-*.xml
-*.cache
+*.nupkg
 
 # Sistema operativo
 .DS_Store
 Thumbs.db
+
+# Configuración Copilot/IA
+copilot*

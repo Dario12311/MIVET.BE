@@ -63,8 +63,7 @@
               "RelativeToolTip": "MIVET.BE.Transversales\\Mapeos\\Consultas\\ConsultasProfile.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:19:39.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:19:39.617Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Horario\\HorarioVeterinarioDto.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAkwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:17:44.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:17:44.979Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "MIVET.BE.Transversales\\Entidades\\Horario\\HorarioVeterinario.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:17:04.682Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:17:04.682Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "MIVET.BE.Repositorio\\Horario\\HorarioVeterinarioRepository.cs",
               "ViewState": "AgIAALAAAAAAAAAAAAAmwNMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:11:18.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:11:18.918Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "MIVET.BE\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAUwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:10:28.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:10:28.008Z"
             },
             {
               "$type": "Document",
@@ -128,8 +123,7 @@
               "RelativeToolTip": "MIVET.BE\\Controllers\\Horario\\HorarioVeterinarioController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T05:09:35.287Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-01T05:09:35.287Z"
             }
           ]
         }
