@@ -1035,23 +1035,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dario\\.nuget\\packages\\": {},
+    "C:\\Users\\AMATISTA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj",
+      "projectUniqueName": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj",
       "projectName": "MIVET.BE.Servicio.Interfaces",
-      "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj",
-      "packagesPath": "C:\\Users\\dario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\obj\\",
+      "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\AMATISTA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AMATISTA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1060,14 +1060,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj"
             }
           }
         }

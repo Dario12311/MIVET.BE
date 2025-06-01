@@ -5666,23 +5666,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dario\\.nuget\\packages\\": {},
+    "C:\\Users\\AMATISTA\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\MIVET.BE.csproj",
+      "projectUniqueName": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE\\MIVET.BE.csproj",
       "projectName": "MIVET.BE",
-      "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\MIVET.BE.csproj",
-      "packagesPath": "C:\\Users\\dario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE\\obj\\",
+      "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE\\MIVET.BE.csproj",
+      "packagesPath": "C:\\Users\\AMATISTA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AMATISTA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5691,29 +5691,30 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Infraestructura\\MIVET.BE.Infraestructura.csproj"
             },
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Repositorio.Interfaces\\MIVET.BE.Repositorio.Interfaces.csproj"
             },
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Repositorio\\MIVET.BE.Repositorio.csproj"
             },
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio.Interfaces\\MIVET.BE.Servicio.Interfaces.csproj"
             },
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Servicio\\MIVET.BE.Servicio.csproj"
             },
-            "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj": {
-              "projectPath": "C:\\Users\\dario\\Documents\\MIVET Proyecto\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj"
+            "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj": {
+              "projectPath": "C:\\Users\\AMATISTA\\Desktop\\Repos\\MIVET.BE\\MIVET.BE.Transversales\\MIVET.BE.Transversales.csproj"
             }
           }
         }
@@ -5789,7 +5790,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Se detectó una versión del paquete fuera de la restricción de dependencia: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requiere MediatR (>= 11.0.0 && < 12.0.0), pero la versión MediatR 12.5.0 ya se resolvió.",
+      "message": "Detected package version outside of dependency constraint: MediatR.Extensions.Microsoft.DependencyInjection 11.1.0 requires MediatR (>= 11.0.0 && < 12.0.0) but version MediatR 12.5.0 was resolved.",
       "libraryId": "MediatR",
       "targetGraphs": [
         "net8.0"

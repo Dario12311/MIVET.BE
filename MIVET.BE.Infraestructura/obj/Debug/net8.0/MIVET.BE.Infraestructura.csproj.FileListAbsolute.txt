@@ -34,3 +34,21 @@ C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Infraestructura\obj\De
 C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.pdb
 C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.genruntimeconfig.cache
 C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\ref\MIVET.BE.Infraestructura.dll
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Infraestructura.deps.json
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Infraestructura.runtimeconfig.json
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Infraestructura.dll
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Infraestructura.pdb
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Transversales.dll
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\bin\Debug\net8.0\MIVET.BE.Transversales.pdb
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.AssemblyInfo.cs
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.sourcelink.json
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.1F89B7EE.Up2Date
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.dll
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\refint\MIVET.BE.Infraestructura.dll
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.pdb
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\MIVET.BE.Infraestructura.genruntimeconfig.cache
+C:\Users\AMATISTA\Desktop\Repos\MIVET.BE\MIVET.BE.Infraestructura\obj\Debug\net8.0\ref\MIVET.BE.Infraestructura.dll

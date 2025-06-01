@@ -1,13 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Hosting;
-using MIVET.BE.Transversales.Entidades;
-using MIVET.BE.Transversales;
-using MIVET.BE.Transversales.Entidades.MaritalStatus;
-using MIVET.BE.Transversales.Entidades.Country;
+using Microsoft.EntityFrameworkCore;
+using MIVET.BE.Infraestructura.Configurations;
 using MIVET.BE.Infraestructura.Data;
+using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Common;
 using MIVET.BE.Transversales.Core;
+using MIVET.BE.Transversales.Entidades;
+using MIVET.BE.Transversales.Entidades.Country;
+using MIVET.BE.Transversales.Entidades.MaritalStatus;
 
 namespace MIVET.BE.Infraestructura.Persintence;
 
@@ -35,8 +36,7 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<LugarConsulta> LugarConsultas { get; set; }
     public DbSet<TipoConsulta> TipoConsultas { get; set; }
     public DbSet<HorasMedicas> HorasMedicas { get; set; }
-
-
+    public DbSet<HorarioVeterinario> HorarioVeterinarios { get; set; }
     #endregion
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -51,7 +51,7 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(MIVETDbContext).Assembly);
-
+        modelBuilder.ApplyConfiguration(new HorarioVeterinarioConfiguration());
         // Configuración básica para PersonaCliente
         modelBuilder.Entity<PersonaCliente>(entity =>
         {

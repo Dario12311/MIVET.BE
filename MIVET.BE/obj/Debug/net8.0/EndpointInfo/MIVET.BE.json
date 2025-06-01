@@ -338,6 +338,797 @@
         }
       }
     },
+    "/api/HorarioVeterinario/{id}": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActualizarHorarioVeterinarioDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActualizarHorarioVeterinarioDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActualizarHorarioVeterinarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearHorarioVeterinarioDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearHorarioVeterinarioDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CrearHorarioVeterinarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}/activos": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/dia/{diaSemana}": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "diaSemana",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/DayOfWeek"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}/dia/{diaSemana}": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "diaSemana",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "$ref": "#/components/schemas/DayOfWeek"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}/semanal": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}/agrupados": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "Sunday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Monday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Tuesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Wednesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Thursday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Friday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Saturday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "Sunday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Monday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Tuesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Wednesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Thursday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Friday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Saturday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "Sunday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Monday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Tuesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Wednesday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Thursday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Friday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    },
+                    "Saturday": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/buscar": {
+      "post": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FiltroHorarioVeterinarioDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FiltroHorarioVeterinarioDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/FiltroHorarioVeterinarioDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/veterinario/{numeroDocumento}/rango": {
+      "get": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "numeroDocumento",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "fechaInicio",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "fechaFin",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HorarioVeterinarioDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/{id}/desactivar": {
+      "patch": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HorarioVeterinario/{id}/activar": {
+      "patch": {
+        "tags": [
+          "HorarioVeterinario"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/MascotaControllers": {
       "get": {
         "tags": [
@@ -1297,6 +2088,43 @@
   },
   "components": {
     "schemas": {
+      "ActualizarHorarioVeterinarioDto": {
+        "type": "object",
+        "properties": {
+          "diaSemana": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "horaFin": {
+            "type": "string",
+            "format": "date-span",
+            "nullable": true
+          },
+          "esActivo": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "ActualizarRolesDTO": {
         "type": "object",
         "properties": {
@@ -1352,6 +2180,88 @@
           "lugarConsultaID": {
             "type": "integer",
             "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CrearHorarioVeterinarioDto": {
+        "required": [
+          "diaSemana",
+          "horaFin",
+          "horaInicio",
+          "medicoVeterinarioNumeroDocumento"
+        ],
+        "type": "object",
+        "properties": {
+          "medicoVeterinarioNumeroDocumento": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "diaSemana": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DayOfWeek": {
+        "enum": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "FiltroHorarioVeterinarioDto": {
+        "type": "object",
+        "properties": {
+          "medicoVeterinarioNumeroDocumento": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaSemana": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "esActivo": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "fechaDesde": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaHasta": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1416,6 +2326,61 @@
             "nullable": true
           },
           "observaciones": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HorarioVeterinarioDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "medicoVeterinarioNumeroDocumento": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaSemana": {
+            "$ref": "#/components/schemas/DayOfWeek"
+          },
+          "horaInicio": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "horaFin": {
+            "type": "string",
+            "format": "date-span"
+          },
+          "esActivo": {
+            "type": "boolean"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "fechaModificacion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "observaciones": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaInicio": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaFin": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "nombreVeterinario": {
             "type": "string",
             "nullable": true
           }

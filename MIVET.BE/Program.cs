@@ -1,9 +1,13 @@
 using Microsoft.EntityFrameworkCore;
+using MIVET.BE.Aplicacion.Services;
 using MIVET.BE.Infraestructura.Persintence;
-using MIVET.BE.Servicio.Interfaces;
-using MIVET.BE.Servicio;
-using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Infraestructura.Repositories;
 using MIVET.BE.Repositorio;
+using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Servicio;
+using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Transversales.Interfaces.Repositories;
+using MIVET.BE.Transversales.Interfaces.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,6 +48,8 @@ builder.Services.AddScoped<IProductosBLL, ProductosBLL>();
 builder.Services.AddScoped<IProductosDAL, ProductosDAL>();
 builder.Services.AddScoped<IConsultasBLL, ConsultasBLL>();
 builder.Services.AddScoped<IConsultasDAL, ConsultasDAL>();
+builder.Services.AddScoped<IHorarioVeterinarioRepository, HorarioVeterinarioRepository>();
+builder.Services.AddScoped<IHorarioVeterinarioService, HorarioVeterinarioService>();
 
 // Agregar servicios a contenedor 
 builder.Services.AddControllers();
