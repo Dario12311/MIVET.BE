@@ -1,6 +1,6 @@
 ﻿using MIVET.BE.Transversales.DTOs;
 
-namespace MIVET.BE.Transversales.Interfaces.Services
+namespace MIVET.BE.Servicio.Interfaces
 {
     public interface IHorarioVeterinarioService
     {

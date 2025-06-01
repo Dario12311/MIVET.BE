@@ -982,6 +982,317 @@
     ]
   },
   {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "CancelarCita",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/cancelar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.CancelarCitaVeterinarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerCitaCompleta",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/completa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.CitaDetalladaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "CompletarCita",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/completar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.CompletarCitaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerHistorialCompletoCita",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/historial-completo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoCompletoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "IniciarCita",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/iniciar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.IniciarCitaVeterinarioDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.CitaDetalladaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ValidarPuedeCompletar",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/validar-completar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "veterinarioNumeroDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ValidarPuedeIniciar",
+    "RelativePath": "api/CitaVeterinario/cita/{citaId}/validar-iniciar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "veterinarioNumeroDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerCitasVeterinario",
+    "RelativePath": "api/CitaVeterinario/veterinario/{numeroDocumento}/citas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.CitaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerCitasCompletadas",
+    "RelativePath": "api/CitaVeterinario/veterinario/{numeroDocumento}/citas-completadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fechaInicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.CitaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerCitasDelDia",
+    "RelativePath": "api/CitaVeterinario/veterinario/{numeroDocumento}/citas-del-dia",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "fecha",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.CitaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.CitaVeterinarioController",
+    "Method": "ObtenerProximasCitas",
+    "RelativePath": "api/CitaVeterinario/veterinario/{numeroDocumento}/proximas-citas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "diasAdelante",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.CitaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MIVET.BE.Controllers.ConsultasControllers",
     "Method": "Create",
     "RelativePath": "api/ConsultasControllers/Create",
@@ -1449,6 +1760,349 @@
     ]
   },
   {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerTodas",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.FacturaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "Crear",
+    "RelativePath": "api/Factura",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.CrearFacturaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.FacturaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/Factura/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.FacturaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "Anular",
+    "RelativePath": "api/Factura/{id}/anular",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.AnularFacturaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "EnviarPorEmail",
+    "RelativePath": "api/Factura/{id}/enviar-email",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.EnviarFacturaEmailDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ActualizarEstado",
+    "RelativePath": "api/Factura/{id}/estado",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.ActualizarEstadoFacturaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.FacturaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "MarcarComoPagada",
+    "RelativePath": "api/Factura/{id}/pagar",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.PagarFacturaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "Buscar",
+    "RelativePath": "api/Factura/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "termino",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.FacturaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorCita",
+    "RelativePath": "api/Factura/cita/{citaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.FacturaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorCliente",
+    "RelativePath": "api/Factura/cliente/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.FacturaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerEstadisticasVentas",
+    "RelativePath": "api/Factura/estadisticas/ventas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fechaInicio",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "fechaFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorFiltro",
+    "RelativePath": "api/Factura/filtrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtro",
+        "Type": "MIVET.BE.Transversales.DTOs.FiltroFacturaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.FacturaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorNumero",
+    "RelativePath": "api/Factura/numero/{numeroFactura}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroFactura",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.FacturaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.FacturaController",
+    "Method": "ObtenerPorVeterinario",
+    "RelativePath": "api/Factura/veterinario/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.FacturaDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "MIVET.BE.Controllers.HistoriaClinicaMascotaControllers",
     "Method": "GetAllAsync",
     "RelativePath": "api/HistoriaClinicaMascotaControllers",
@@ -1517,6 +2171,479 @@
     "ReturnTypes": [
       {
         "Type": "MIVET.BE.Transversales.Entidades.HistoriaClinicaMascota",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/HistorialClinico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Crear",
+    "RelativePath": "api/HistorialClinico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.CrearHistorialClinicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/HistorialClinico/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Actualizar",
+    "RelativePath": "api/HistorialClinico/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.ActualizarHistorialClinicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Eliminar",
+    "RelativePath": "api/HistorialClinico/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Cancelar",
+    "RelativePath": "api/HistorialClinico/{id}/cancelar",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.CancelarHistorialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Completar",
+    "RelativePath": "api/HistorialClinico/{id}/completar",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.CompletarHistorialDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerCompleto",
+    "RelativePath": "api/HistorialClinico/{id}/completo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoCompletoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "Buscar",
+    "RelativePath": "api/HistorialClinico/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "termino",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorCitaId",
+    "RelativePath": "api/HistorialClinico/cita/{citaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.HistorialClinicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorCliente",
+    "RelativePath": "api/HistorialClinico/cliente/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorFiltro",
+    "RelativePath": "api/HistorialClinico/filtrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtro",
+        "Type": "MIVET.BE.Transversales.DTOs.FiltroHistorialClinicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "IniciarCita",
+    "RelativePath": "api/HistorialClinico/iniciar-cita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.IniciarCitaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorMascota",
+    "RelativePath": "api/HistorialClinico/mascota/{mascotaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mascotaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerHistorialCompletoMascota",
+    "RelativePath": "api/HistorialClinico/mascota/{mascotaId}/completo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mascotaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ContarHistorialesPorMascota",
+    "RelativePath": "api/HistorialClinico/mascota/{mascotaId}/contador",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mascotaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ValidarPuedeCrear",
+    "RelativePath": "api/HistorialClinico/validar-crear/{citaId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "citaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "veterinarioNumeroDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ValidarPuedeModificar",
+    "RelativePath": "api/HistorialClinico/validar-modificar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "veterinarioNumeroDocumento",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.HistorialClinicoController",
+    "Method": "ObtenerPorVeterinario",
+    "RelativePath": "api/HistorialClinico/veterinario/{numeroDocumento}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroDocumento",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.HistorialClinicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -2191,6 +3318,213 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "ObtenerTodos",
+    "RelativePath": "api/ProcedimientoMedico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "Crear",
+    "RelativePath": "api/ProcedimientoMedico",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.CrearProcedimientoMedicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "ObtenerPorId",
+    "RelativePath": "api/ProcedimientoMedico/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "Actualizar",
+    "RelativePath": "api/ProcedimientoMedico/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Transversales.DTOs.ActualizarProcedimientoMedicoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "Eliminar",
+    "RelativePath": "api/ProcedimientoMedico/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "CambiarEstado",
+    "RelativePath": "api/ProcedimientoMedico/{id}/estado",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.CambiarEstadoProcedimientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "ActualizarPrecio",
+    "RelativePath": "api/ProcedimientoMedico/{id}/precio",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "MIVET.BE.Controllers.Varios.ActualizarPrecioProcedimientoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "ObtenerActivos",
+    "RelativePath": "api/ProcedimientoMedico/activos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "MIVET.BE.Controllers.Varios.ProcedimientoMedicoController",
+    "Method": "ObtenerPorCategoria",
+    "RelativePath": "api/ProcedimientoMedico/categoria/{categoria}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "categoria",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MIVET.BE.Transversales.DTOs.ProcedimientoMedicoDto, MIVET.BE.Transversales, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "MIVET.BE.Controllers.productos.ProductosControllers",

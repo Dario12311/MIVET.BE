@@ -529,6 +529,173 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.ToTable("Country");
                 });
 
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.DetalleFactura", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<string>("DescripcionItem")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("DescuentoPorcentaje")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(10,2)")
+                        .HasDefaultValue(0m);
+
+                    b.Property<int>("FacturaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<decimal>("PrecioUnitario")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int?>("ProcedimientoMedicoId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ProductoId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.Property<int>("TipoItem")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("FacturaId");
+
+                    b.HasIndex("ProcedimientoMedicoId");
+
+                    b.HasIndex("ProductoId");
+
+                    b.HasIndex("TipoItem");
+
+                    b.ToTable("DetalleFactura", "dbo", t =>
+                        {
+                            t.HasCheckConstraint("CK_DetalleFactura_Cantidad", "Cantidad > 0");
+
+                            t.HasCheckConstraint("CK_DetalleFactura_DescuentoPorcentaje", "DescuentoPorcentaje >= 0 AND DescuentoPorcentaje <= 100");
+
+                            t.HasCheckConstraint("CK_DetalleFactura_PrecioUnitario", "PrecioUnitario >= 0");
+                        });
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Factura", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CitaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreadoPor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<decimal>("DescuentoPorcentaje")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(12,2)")
+                        .HasDefaultValue(0m);
+
+                    b.Property<decimal>("DescuentoValor")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("decimal(12,2)")
+                        .HasDefaultValue(0m);
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime>("FechaFactura")
+                        .HasColumnType("datetime");
+
+                    b.Property<DateTime?>("FechaModificacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("IVA")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<int>("MascotaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MedicoVeterinarioNumeroDocumento")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("MetodoPago")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ModificadoPor")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("NumeroDocumentoCliente")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("NumeroFactura")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(12,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CitaId")
+                        .IsUnique();
+
+                    b.HasIndex("Estado");
+
+                    b.HasIndex("FechaFactura");
+
+                    b.HasIndex("MascotaId");
+
+                    b.HasIndex("MedicoVeterinarioNumeroDocumento");
+
+                    b.HasIndex("NumeroDocumentoCliente");
+
+                    b.HasIndex("NumeroFactura")
+                        .IsUnique();
+
+                    b.ToTable("Factura", "dbo");
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HistoriaClinicaMascota", b =>
                 {
                     b.Property<int>("Id")
@@ -628,6 +795,128 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.HasIndex("NumeroDocumentoVeterinario");
 
                     b.ToTable("HistoriaClinicaMascota", "dbo");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HistorialClinico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CitaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CreadoPor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Diagnostico")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<int>("Estado")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ExamenFisico")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime?>("FechaModificacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("MascotaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Medicamentos")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("MedicoVeterinarioNumeroDocumento")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("ModificadoPor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("MotivoConsulta")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("Observaciones")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.Property<string>("Peso")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("ProcedimientosRealizados")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("ProximaCita")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("RecomendacionesGenerales")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("SignosVitales")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Sintomas")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("Temperatura")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Tratamiento")
+                        .IsRequired()
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CitaId")
+                        .IsUnique();
+
+                    b.HasIndex("Estado");
+
+                    b.HasIndex("FechaRegistro");
+
+                    b.HasIndex("MascotaId");
+
+                    b.HasIndex("MedicoVeterinarioNumeroDocumento");
+
+                    b.ToTable("HistorialClinico", "dbo");
                 });
 
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HorarioVeterinario", b =>
@@ -989,6 +1278,66 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.ToTable("PersonaCliente", "dbo");
                 });
 
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.ProcedimientoMedico", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("CreadoPor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("EsActivo")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime?>("FechaModificacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("ModificadoPor")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(10,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Categoria");
+
+                    b.HasIndex("EsActivo");
+
+                    b.HasIndex("Nombre")
+                        .IsUnique();
+
+                    b.ToTable("ProcedimientoMedico", "dbo");
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.TipoDocumento", b =>
                 {
                     b.Property<int>("Id")
@@ -1183,6 +1532,66 @@ namespace MIVET.BE.Infraestructura.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.DetalleFactura", b =>
+                {
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Factura", "Factura")
+                        .WithMany("DetallesFactura")
+                        .HasForeignKey("FacturaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.ProcedimientoMedico", "ProcedimientoMedico")
+                        .WithMany()
+                        .HasForeignKey("ProcedimientoMedicoId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("MIVET.BE.Transversales.Productos", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Factura");
+
+                    b.Navigation("ProcedimientoMedico");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Factura", b =>
+                {
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Cita", "Cita")
+                        .WithMany()
+                        .HasForeignKey("CitaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("MascotaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.MedicoVeterinario", "MedicoVeterinario")
+                        .WithMany()
+                        .HasForeignKey("MedicoVeterinarioNumeroDocumento")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.PersonaCliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("NumeroDocumentoCliente")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cita");
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Mascota");
+
+                    b.Navigation("MedicoVeterinario");
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HistoriaClinicaMascota", b =>
                 {
                     b.HasOne("MIVET.BE.Transversales.Entidades.Mascota", null)
@@ -1202,6 +1611,33 @@ namespace MIVET.BE.Infraestructura.Migrations
                         .HasForeignKey("NumeroDocumentoVeterinario")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HistorialClinico", b =>
+                {
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Cita", "Cita")
+                        .WithMany()
+                        .HasForeignKey("CitaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("MascotaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.MedicoVeterinario", "MedicoVeterinario")
+                        .WithMany()
+                        .HasForeignKey("MedicoVeterinarioNumeroDocumento")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cita");
+
+                    b.Navigation("Mascota");
+
+                    b.Navigation("MedicoVeterinario");
                 });
 
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.HorarioVeterinario", b =>
@@ -1261,6 +1697,11 @@ namespace MIVET.BE.Infraestructura.Migrations
                         .HasForeignKey("RolId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Factura", b =>
+                {
+                    b.Navigation("DetallesFactura");
                 });
 #pragma warning restore 612, 618
         }

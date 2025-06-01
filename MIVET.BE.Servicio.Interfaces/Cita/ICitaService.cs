@@ -1,7 +1,7 @@
 ﻿using MIVET.BE.Transversales.DTOs;
 using MIVET.BE.Transversales.Enums;
 
-namespace MIVET.BE.Transversales.Interfaces.Services
+namespace MIVET.BE.Servicio.Interfaces
 {
     public interface ICitaService
     {

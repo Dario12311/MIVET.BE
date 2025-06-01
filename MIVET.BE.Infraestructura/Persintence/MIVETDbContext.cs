@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using MIVET.BE.Infraestructura.Configurations;
 using MIVET.BE.Infraestructura.Data;
+using MIVET.BE.Infraestructura.Persintence.EntityConfiguration;
+using MIVET.BE.Infraestructura.Persintence.EntityConfiguration.ConfiguracionesClinicas;
 using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Common;
 using MIVET.BE.Transversales.Core;
@@ -38,6 +40,11 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<HorasMedicas> HorasMedicas { get; set; }
     public DbSet<HorarioVeterinario> HorarioVeterinarios { get; set; }
     public DbSet<Cita> Citas { get; set; }
+    public DbSet<HistorialClinico> HistorialClinico { get; set; }
+    public DbSet<ProcedimientoMedico> ProcedimientoMedico { get; set; }
+    public DbSet<Factura> Factura { get; set; }
+    public DbSet<DetalleFactura> DetalleFactura { get; set; }
+
 
     #endregion
 
@@ -57,6 +64,10 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
 
         // AGREGAR LA CONFIGURACIÓN DE CITAS
         modelBuilder.ApplyConfiguration(new CitaConfiguration());
+        modelBuilder.ApplyConfiguration(new HistorialClinicoEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new ProcedimientoMedicoEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new FacturaEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new DetalleFacturaEntityConfiguration());
 
         // Configuración básica para PersonaCliente
         modelBuilder.Entity<PersonaCliente>(entity =>

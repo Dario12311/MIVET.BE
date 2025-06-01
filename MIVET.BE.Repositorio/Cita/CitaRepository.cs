@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MIVET.BE.Infraestructura.Data;
 using MIVET.BE.Infraestructura.Persintence;
+using MIVET.BE.Repositorio.Interfaces;
 using MIVET.BE.Transversales.DTOs;
 using MIVET.BE.Transversales.Entidades;
 using MIVET.BE.Transversales.Enums;
-using MIVET.BE.Transversales.Interfaces.Repositories;
 
 namespace MIVET.BE.Infraestructura.Repositories
 {

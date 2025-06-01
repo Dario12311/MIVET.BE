@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MIVET.BE.Servicio.Interfaces;
 using MIVET.BE.Transversales.DTOs;
-using MIVET.BE.Transversales.Interfaces.Services;
 using MIVET.BE.Transversales.Enums;
 
 namespace MIVET.BE.WebAPI.Controllers

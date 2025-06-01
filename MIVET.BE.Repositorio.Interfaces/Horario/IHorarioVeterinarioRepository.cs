@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MIVET.BE.Transversales.Interfaces.Repositories
+namespace MIVET.BE.Repositorio.Interfaces
 {
     public interface IHorarioVeterinarioRepository
     {

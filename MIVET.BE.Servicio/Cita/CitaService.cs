@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
+using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Servicio.Interfaces;
 using MIVET.BE.Transversales.DTOs;
 using MIVET.BE.Transversales.Entidades;
 using MIVET.BE.Transversales.Enums;
-using MIVET.BE.Transversales.Interfaces.Repositories;
-using MIVET.BE.Transversales.Interfaces.Services;
 
 namespace MIVET.BE.Servicios
 {

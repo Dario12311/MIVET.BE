@@ -1,10 +1,10 @@
 ﻿using MIVET.BE.Transversales.DTOs;
 using MIVET.BE.Transversales.Entidades;
-using MIVET.BE.Transversales.Interfaces.Repositories;
-using MIVET.BE.Transversales.Interfaces.Services;
 using AutoMapper;
+using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Repositorio.Interfaces;
 
-namespace MIVET.BE.Aplicacion.Services
+namespace MIVET.BE.Servicio
 {
     public class HorarioVeterinarioService : IHorarioVeterinarioService
     {

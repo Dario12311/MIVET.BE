@@ -2,7 +2,7 @@
 using MIVET.BE.Transversales.Entidades;
 using MIVET.BE.Transversales.Enums;
 
-namespace MIVET.BE.Transversales.Interfaces.Repositories
+namespace MIVET.BE.Repositorio.Interfaces
 {
     public interface ICitaRepository
     {

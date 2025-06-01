@@ -1,6 +1,6 @@
 ﻿using MIVET.BE.Transversales.DTOs;
-using MIVET.BE.Transversales.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
+using MIVET.BE.Servicio.Interfaces;
 
 namespace MIVET.BE.WebAPI.Controllers
 {
