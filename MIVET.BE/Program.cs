@@ -6,6 +6,7 @@ using MIVET.BE.Repositorio;
 using MIVET.BE.Repositorio.Interfaces;
 using MIVET.BE.Servicio;
 using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Servicios;
 using MIVET.BE.Transversales.Interfaces.Repositories;
 using MIVET.BE.Transversales.Interfaces.Services;
 
@@ -50,6 +51,9 @@ builder.Services.AddScoped<IConsultasBLL, ConsultasBLL>();
 builder.Services.AddScoped<IConsultasDAL, ConsultasDAL>();
 builder.Services.AddScoped<IHorarioVeterinarioRepository, HorarioVeterinarioRepository>();
 builder.Services.AddScoped<IHorarioVeterinarioService, HorarioVeterinarioService>();
+builder.Services.AddScoped<ICitaService, CitaService>();
+builder.Services.AddScoped<IDisponibilidadService, DisponibilidadService>();
+builder.Services.AddScoped<ICitaRepository, CitaRepository>();
 
 // Agregar servicios a contenedor 
 builder.Services.AddControllers();

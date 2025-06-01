@@ -359,6 +359,101 @@ namespace MIVET.BE.Infraestructura.Migrations
                         });
                 });
 
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Cita", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CreadoPor")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<int>("DuracionMinutos")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(15);
+
+                    b.Property<int>("EstadoCita")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("FechaCancelacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaCita")
+                        .HasColumnType("date");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<DateTime?>("FechaFinPeriodo")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("FechaInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("FechaModificacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<TimeSpan>("HoraFin")
+                        .HasColumnType("time");
+
+                    b.Property<TimeSpan>("HoraInicio")
+                        .HasColumnType("time");
+
+                    b.Property<int>("MascotaId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("MedicoVeterinarioNumeroDocumento")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("MotivoCancelacion")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("MotivoConsulta")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Observaciones")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<int>("TipoCita")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoUsuarioCreador")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EstadoCita");
+
+                    b.HasIndex("FechaCita");
+
+                    b.HasIndex("MascotaId");
+
+                    b.HasIndex("MedicoVeterinarioNumeroDocumento");
+
+                    b.HasIndex("FechaCita", "HoraInicio", "HoraFin");
+
+                    b.HasIndex("MedicoVeterinarioNumeroDocumento", "FechaCita", "HoraInicio");
+
+                    b.ToTable("Citas", null, t =>
+                        {
+                            t.HasCheckConstraint("CK_Cita_DuracionMinutos", "DuracionMinutos >= 15 AND DuracionMinutos <= 480 AND DuracionMinutos % 15 = 0");
+
+                            t.HasCheckConstraint("CK_Cita_HorarioValido", "HoraInicio < HoraFin");
+                        });
+                });
+
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Consultas", b =>
                 {
                     b.Property<int>("CitaMedicaID")
@@ -1022,6 +1117,25 @@ namespace MIVET.BE.Infraestructura.Migrations
                     b.HasIndex("RolId");
 
                     b.ToTable("Usuarios", "dbo");
+                });
+
+            modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Cita", b =>
+                {
+                    b.HasOne("MIVET.BE.Transversales.Entidades.Mascota", "Mascota")
+                        .WithMany()
+                        .HasForeignKey("MascotaId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("MIVET.BE.Transversales.Entidades.MedicoVeterinario", "MedicoVeterinario")
+                        .WithMany()
+                        .HasForeignKey("MedicoVeterinarioNumeroDocumento")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Mascota");
+
+                    b.Navigation("MedicoVeterinario");
                 });
 
             modelBuilder.Entity("MIVET.BE.Transversales.Entidades.Consultas", b =>

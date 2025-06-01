@@ -31,12 +31,14 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<Usuarios> Usuarios { get; set; }
     public DbSet<Productos> Productos { get; set; }
     public DbSet<Consultas> Consultas { get; set; }
-    public DbSet<Dias> Dias{ get; set; }
+    public DbSet<Dias> Dias { get; set; }
     public DbSet<EstadoCita> EstadoCita { get; set; }
     public DbSet<LugarConsulta> LugarConsultas { get; set; }
     public DbSet<TipoConsulta> TipoConsultas { get; set; }
     public DbSet<HorasMedicas> HorasMedicas { get; set; }
     public DbSet<HorarioVeterinario> HorarioVeterinarios { get; set; }
+    public DbSet<Cita> Citas { get; set; }
+
     #endregion
 
     public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
@@ -52,6 +54,10 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(MIVETDbContext).Assembly);
         modelBuilder.ApplyConfiguration(new HorarioVeterinarioConfiguration());
+
+        // AGREGAR LA CONFIGURACIÓN DE CITAS
+        modelBuilder.ApplyConfiguration(new CitaConfiguration());
+
         // Configuración básica para PersonaCliente
         modelBuilder.Entity<PersonaCliente>(entity =>
         {
@@ -63,7 +69,18 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
         HasSequences(modelBuilder);
 
         base.OnModelCreating(modelBuilder);
+
+        // CONFIGURACIÓN SIMPLE PARA CITAS (SIN TRIGGERS)
+        modelBuilder.Entity<Cita>(entity =>
+        {
+            // Configuración simple sin triggers - ya está en CitaConfiguration
+            entity.ToTable("Citas");
+        });
     }
+
+    // REMOVER OnConfiguring problemático
+    // protected override void OnConfiguring ya no es necesario aquí
+    // porque el contexto se configura en Program.cs
 
     private void AuditChanges()
     {
