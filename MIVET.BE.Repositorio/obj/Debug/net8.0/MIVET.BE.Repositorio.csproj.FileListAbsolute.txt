@@ -1,0 +1,12 @@
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\bin\Debug\net8.0\MIVET.BE.Repositorio.deps.json
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\bin\Debug\net8.0\MIVET.BE.Repositorio.dll
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\bin\Debug\net8.0\MIVET.BE.Repositorio.pdb
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.AssemblyInfoInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.AssemblyInfo.cs
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.csproj.CoreCompileInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.sourcelink.json
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.dll
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\refint\MIVET.BE.Repositorio.dll
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\MIVET.BE.Repositorio.pdb
+C:\repos\MIVET.BE\MIVET.BE.Repositorio\obj\Debug\net8.0\ref\MIVET.BE.Repositorio.dll

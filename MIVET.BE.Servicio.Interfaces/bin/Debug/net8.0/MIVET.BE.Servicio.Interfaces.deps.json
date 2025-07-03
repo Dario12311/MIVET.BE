@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MIVET.BE.Servicio.Interfaces/1.0.0": {
+        "runtime": {
+          "MIVET.BE.Servicio.Interfaces.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MIVET.BE.Servicio.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

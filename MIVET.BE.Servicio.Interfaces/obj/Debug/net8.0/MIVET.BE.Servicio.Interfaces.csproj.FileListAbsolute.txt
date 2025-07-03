@@ -1,0 +1,12 @@
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\bin\Debug\net8.0\MIVET.BE.Servicio.Interfaces.deps.json
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\bin\Debug\net8.0\MIVET.BE.Servicio.Interfaces.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\bin\Debug\net8.0\MIVET.BE.Servicio.Interfaces.pdb
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.AssemblyInfoInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.AssemblyInfo.cs
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.csproj.CoreCompileInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.sourcelink.json
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\refint\MIVET.BE.Servicio.Interfaces.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\MIVET.BE.Servicio.Interfaces.pdb
+C:\repos\MIVET.BE\MIVET.BE.Servicio.Interfaces\obj\Debug\net8.0\ref\MIVET.BE.Servicio.Interfaces.dll

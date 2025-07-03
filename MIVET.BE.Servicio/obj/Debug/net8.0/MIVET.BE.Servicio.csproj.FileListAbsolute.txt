@@ -1,0 +1,12 @@
+C:\repos\MIVET.BE\MIVET.BE.Servicio\bin\Debug\net8.0\MIVET.BE.Servicio.deps.json
+C:\repos\MIVET.BE\MIVET.BE.Servicio\bin\Debug\net8.0\MIVET.BE.Servicio.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio\bin\Debug\net8.0\MIVET.BE.Servicio.pdb
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.AssemblyInfoInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.AssemblyInfo.cs
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.csproj.CoreCompileInputs.cache
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.sourcelink.json
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\refint\MIVET.BE.Servicio.dll
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\MIVET.BE.Servicio.pdb
+C:\repos\MIVET.BE\MIVET.BE.Servicio\obj\Debug\net8.0\ref\MIVET.BE.Servicio.dll
