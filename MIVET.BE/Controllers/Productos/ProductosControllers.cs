@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MIVET.BE.Infraestructura.Migrations;
 using MIVET.BE.Servicio;
 using MIVET.BE.Servicio.Interfaces;
 using MIVET.BE.Transversales;
