@@ -23,6 +23,3 @@ Release/
 *.pdb
 *.cache
 *.vsidx
-project.lock.json
-project.fragment.lock.json
-project.assets.json
