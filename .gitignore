@@ -1,72 +1,28 @@
-# Build results
+## Build results
 bin/
 obj/
-out/
+Debug/
+Release/
 
-# VS cache y settings
-.vs/
+## User-specific files
 *.user
 *.suo
 *.userosscache
 *.sln.docstates
+*.vs/
 
-# Archivos temporales y de entorno
-*.db
-*.db-shm
-*.db-wal
-*.cache
+## VS Code
+.vscode/
+
+## Logs
 *.log
-*.tmp
 
-# Archivos generados por compilación
-*.dll
-*.exe
+## Others
+*.dbmdl
+*.dbproj.schemaview
 *.pdb
-*.mdb
-*.app
-*.js.map
-*.deps.json
-*.runtimeconfig.json
-*.sourceinfo
-*.sourcelink.json
-
-# Archivos de diseño y configuración de IDE
-DocumentLayout*.json
+*.cache
 *.vsidx
-*.v9.bin
-
-# Configuración de proyectos
 project.lock.json
 project.fragment.lock.json
-*.csproj.AssemblyReference.cache
-*.AssemblyInfoInputs.cache
-*.AssemblyInfo.cs
-
-# Rider / JetBrains
-.idea/
-*.sln.iml
-
-# Archivos de Razor/MVC temporales
-*.cshtml.g.cs
-*.g.cs
-*.razor.g.cs
-*.razor.css
-
-# Paquetes y publicación
-artifacts/
-publish/
-*.nupkg
-*.snupkg
-
-# Archivos NuGet
-.nuget/
-packages/
-*.nupkg
-
-# Sistema operativo
-.DS_Store
-Thumbs.db
-
-# Configuración Copilot/IA
-copilot*
-/.vs
+project.assets.json
