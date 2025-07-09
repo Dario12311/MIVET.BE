@@ -12,8 +12,8 @@ on:
 
 jobs:
   build:
-    name: SonarCloud
-    runs-on: windows-latest  # Usamos Windows porque es más común para proyectos Visual Studio
+    name: SonarCloud .NET Scan
+    runs-on: windows-latest  # ✅ compatible con proyectos .NET y Visual Studio
 
     steps:
       - name: Checkout code
@@ -24,15 +24,25 @@ jobs:
         with:
           dotnet-version: '7.0.x'  # Cambia si usas .NET 6 o .NET 8
 
-      - name: Restore dependencies
-        run: dotnet restore
+      - name: Install SonarScanner for .NET
+        run: dotnet tool install --global dotnet-sonarscanner
 
-      - name: Build solution
-        run: dotnet build --no-restore
+      - name: Add tool to PATH
+        run: echo "${{ runner.tool_cache }}/dotnet/tools" >> $GITHUB_PATH
 
-      - name: Run SonarCloud analysis
-        uses: SonarSource/sonarcloud-github-action@v2
-        with:
-          organization: Dario12311
-          projectKey: Dario12311_MIVET.BE
-          token: ${{ secrets.SONAR_TOKEN }}
+      - name: Begin SonarCloud scan
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: >
+          dotnet-sonarscanner begin 
+          /k:"Dario12311_MIVET.BE" 
+          /o:"dario12311" 
+          /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
+
+      - name: Build the project
+        run: dotnet build
+
+      - name: End SonarCloud scan
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: dotnet-sonarscanner end /d:sonar.login="${{ secrets.SONAR_TOKEN }}"
