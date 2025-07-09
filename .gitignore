@@ -1,0 +1,9 @@
+# Carpetas de Visual Studio y compilación
+.vs/
+obj/
+bin/
+*.user
+*.suo
+*.cache
+*.db
+*.log
