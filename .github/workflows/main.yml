@@ -4,11 +4,11 @@ on:
   push:
     branches:
       - main
-      - Desarrollo
+      - Origin/features/Desarrollo
   pull_request:
     branches:
       - main
-      - Desarrollo
+      - Origin/features/Desarrollo
 
 jobs:
   build:
