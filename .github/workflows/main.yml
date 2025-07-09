@@ -1,0 +1,41 @@
+name: SonarCloud
+
+on:
+  push:
+    branches:
+      - main
+      - Desarrollo
+  pull_request:
+    branches:
+      - main
+      - Desarrollo
+
+jobs:
+  build:
+    name: SonarCloud
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Cache SonarCloud packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          organization: Dario12311
+          projectKey: Dario12311_MIVET.BE
+          token: ${{ secrets.SONAR_TOKEN }}
