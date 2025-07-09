@@ -6,4 +6,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MIVET.BE.Infraestructura\MIVET.BE.Infraestructura.csproj" />
+    <ProjectReference Include="..\MIVET.BE.Repositorio.Interfaces\MIVET.BE.Repositorio.Interfaces.csproj" />
+    <ProjectReference Include="..\MIVET.BE.Repositorio\MIVET.BE.Repositorio.csproj" />
+    <ProjectReference Include="..\MIVET.BE.Servicio.Interfaces\MIVET.BE.Servicio.Interfaces.csproj" />
+    <ProjectReference Include="..\MIVET.BE.Transversales\MIVET.BE.Transversales.csproj" />
+  </ItemGroup>
+
 </Project>

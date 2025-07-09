@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("fa026d5c-b9b7-4cac-8d37-1909489f22cc")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d68a8a20f0a972fb4d0d4d9e6c8a48ea8e6f10a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MIVET.BE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

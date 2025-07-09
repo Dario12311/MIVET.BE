@@ -1,0 +1,32 @@
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.deps.json
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.pdb
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.AssemblyInfoInputs.cache
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.AssemblyInfo.cs
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.sourcelink.json
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\refint\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.pdb
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\ref\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Transversales.dll
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Transversales.pdb
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.csproj.AssemblyReference.cache
+C:\Users\dario\OneDrive\Documentos\Ingenieria de Software\Software MIVET\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.169D8F72.Up2Date
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.deps.json
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.pdb
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Transversales.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\bin\Debug\net8.0\MIVET.BE.Transversales.pdb
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.csproj.AssemblyReference.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.AssemblyInfoInputs.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.AssemblyInfo.cs
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.sourcelink.json
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.169D8F72.Up2Date
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\refint\MIVET.BE.Repositorio.Interfaces.dll
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\MIVET.BE.Repositorio.Interfaces.pdb
+C:\Users\dario\Documents\MIVET Proyecto\MIVET.BE\MIVET.BE.Repositorio.Interfaces\obj\Debug\net8.0\ref\MIVET.BE.Repositorio.Interfaces.dll
