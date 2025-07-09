@@ -2,13 +2,14 @@ name: SonarCloud
 
 on:
   push:
-    branches:
-      - main
-      - Origin/features/Desarrollo
-  pull_request:
-    branches:
-      - main
-      - Origin/features/Desarrollo
+  branches:
+    - main
+    - features/Desarrollo
+pull_request:
+  branches:
+    - main
+    - features/Desarrollo
+
 
 jobs:
   build:
