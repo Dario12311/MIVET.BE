@@ -13,27 +13,24 @@ on:
 jobs:
   build:
     name: SonarCloud
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Usamos Windows porque es más común para proyectos Visual Studio
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
         with:
-          node-version: '18'
+          dotnet-version: '7.0.x'  # Cambia si usas .NET 6 o .NET 8
 
-      - name: Cache SonarCloud packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.sonar/cache
-          key: ${{ runner.os }}-sonar
-          restore-keys: ${{ runner.os }}-sonar
+      - name: Restore dependencies
+        run: dotnet restore
 
-      - name: Install dependencies
-        run: npm install
+      - name: Build solution
+        run: dotnet build --no-restore
 
-      - name: Run SonarCloud Scan
+      - name: Run SonarCloud analysis
         uses: SonarSource/sonarcloud-github-action@v2
         with:
           organization: Dario12311
