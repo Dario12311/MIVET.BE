@@ -1,13 +1,16 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MediatR;
+﻿using MediatR;
 using Microsoft.AspNetCore.Hosting;
-using MIVET.BE.Transversales.Entidades;
-using MIVET.BE.Transversales;
-using MIVET.BE.Transversales.Entidades.MaritalStatus;
-using MIVET.BE.Transversales.Entidades.Country;
+using Microsoft.EntityFrameworkCore;
+using MIVET.BE.Infraestructura.Configurations;
 using MIVET.BE.Infraestructura.Data;
+using MIVET.BE.Infraestructura.Persintence.EntityConfiguration;
+using MIVET.BE.Infraestructura.Persintence.EntityConfiguration.ConfiguracionesClinicas;
+using MIVET.BE.Transversales;
 using MIVET.BE.Transversales.Common;
 using MIVET.BE.Transversales.Core;
+using MIVET.BE.Transversales.Entidades;
+using MIVET.BE.Transversales.Entidades.Country;
+using MIVET.BE.Transversales.Entidades.MaritalStatus;
 
 namespace MIVET.BE.Infraestructura.Persintence;
 
@@ -30,11 +33,17 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<Usuarios> Usuarios { get; set; }
     public DbSet<Productos> Productos { get; set; }
     public DbSet<Consultas> Consultas { get; set; }
-    public DbSet<Dias> Dias{ get; set; }
+    public DbSet<Dias> Dias { get; set; }
     public DbSet<EstadoCita> EstadoCita { get; set; }
     public DbSet<LugarConsulta> LugarConsultas { get; set; }
     public DbSet<TipoConsulta> TipoConsultas { get; set; }
     public DbSet<HorasMedicas> HorasMedicas { get; set; }
+    public DbSet<HorarioVeterinario> HorarioVeterinarios { get; set; }
+    public DbSet<Cita> Citas { get; set; }
+    public DbSet<HistorialClinico> HistorialClinico { get; set; }
+    public DbSet<ProcedimientoMedico> ProcedimientoMedico { get; set; }
+    public DbSet<Factura> Factura { get; set; }
+    public DbSet<DetalleFactura> DetalleFactura { get; set; }
 
 
     #endregion
@@ -51,6 +60,14 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(MIVETDbContext).Assembly);
+        modelBuilder.ApplyConfiguration(new HorarioVeterinarioConfiguration());
+
+        // AGREGAR LA CONFIGURACIÓN DE CITAS
+        modelBuilder.ApplyConfiguration(new CitaConfiguration());
+        modelBuilder.ApplyConfiguration(new HistorialClinicoEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new ProcedimientoMedicoEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new FacturaEntityConfiguration());
+        modelBuilder.ApplyConfiguration(new DetalleFacturaEntityConfiguration());
 
         // Configuración básica para PersonaCliente
         modelBuilder.Entity<PersonaCliente>(entity =>
@@ -63,7 +80,18 @@ public class MIVETDbContext(DbContextOptions options) : DbContext(options)
         HasSequences(modelBuilder);
 
         base.OnModelCreating(modelBuilder);
+
+        // CONFIGURACIÓN SIMPLE PARA CITAS (SIN TRIGGERS)
+        modelBuilder.Entity<Cita>(entity =>
+        {
+            // Configuración simple sin triggers - ya está en CitaConfiguration
+            entity.ToTable("Citas");
+        });
     }
+
+    // REMOVER OnConfiguring problemático
+    // protected override void OnConfiguring ya no es necesario aquí
+    // porque el contexto se configura en Program.cs
 
     private void AuditChanges()
     {

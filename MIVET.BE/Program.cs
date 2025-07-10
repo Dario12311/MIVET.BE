@@ -1,9 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using MIVET.BE.Infraestructura.Persintence;
-using MIVET.BE.Servicio.Interfaces;
-using MIVET.BE.Servicio;
-using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Infraestructura.Repositories;
 using MIVET.BE.Repositorio;
+using MIVET.BE.Repositorio.Interfaces;
+using MIVET.BE.Servicio;
+using MIVET.BE.Servicio.Interfaces;
+using MIVET.BE.Servicios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -44,7 +46,22 @@ builder.Services.AddScoped<IProductosBLL, ProductosBLL>();
 builder.Services.AddScoped<IProductosDAL, ProductosDAL>();
 builder.Services.AddScoped<IConsultasBLL, ConsultasBLL>();
 builder.Services.AddScoped<IConsultasDAL, ConsultasDAL>();
+builder.Services.AddScoped<IHorarioVeterinarioRepository, HorarioVeterinarioRepository>();
+builder.Services.AddScoped<IHorarioVeterinarioService, HorarioVeterinarioService>();
+builder.Services.AddScoped<ICitaService, CitaService>();
+builder.Services.AddScoped<IDisponibilidadService, DisponibilidadService>();
+builder.Services.AddScoped<ICitaRepository, CitaRepository>();
+// Repositorios
+builder.Services.AddScoped<IHistorialClinicoRepository, HistorialClinicoRepository>();
+builder.Services.AddScoped<IProcedimientoMedicoRepository, ProcedimientoMedicoRepository>();
+builder.Services.AddScoped<IFacturaRepository, FacturaRepository>();
 
+// Servicios
+builder.Services.AddScoped<IHistorialClinicoService, HistorialClinicoService>();
+builder.Services.AddScoped<IProcedimientoMedicoService, ProcedimientoMedicoService>();
+builder.Services.AddScoped<IFacturaService, FacturaService>();
+builder.Services.AddScoped<ICitaVeterinarioService, CitaVeterinarioService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 // Agregar servicios a contenedor 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

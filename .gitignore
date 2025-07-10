@@ -1,7 +1,4 @@
-.vs/
-*.vsidx
 # Archivos y carpetas de caché y temporales
-*.log
 *.tmp
 *.temp
 *.cache
@@ -17,12 +14,7 @@ build/
 Thumbs.db
 .env
 .env.*
-.vscode/
 .idea/
-*.suo
-*.user
-*.userosscache
-*.sln.docstates
 # Archivos de lock y dependencias temporales
 package-lock.json
 yarn.lock
@@ -41,3 +33,27 @@ coverage/
 .nyc_output/
 # Archivos de configuración local
 local.settings.json
+## Build results
+bin/
+obj/
+Debug/
+Release/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+
+## VS Code
+.vscode/
+
+## Logs
+*.log
+
+## Others
+*.dbmdl
+*.dbproj.schemaview
+*.pdb
+*.vsidx

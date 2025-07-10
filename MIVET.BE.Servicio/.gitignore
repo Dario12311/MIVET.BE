@@ -1,0 +1,63 @@
+# Archivos de compilación
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.app
+*.log
+
+# Archivos de usuario y del IDE
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de Rider/JetBrains
+.idea/
+
+# Archivos de configuración del entorno
+launchSettings.json
+
+# Archivos de depuración
+*.pdb
+*.mdb
+
+# Datos temporales del sistema
+*.db
+*.db-shm
+*.db-wal
+*.vsidx
+*.tmp
+
+# Archivos de evaluación del proyecto
+*.v9.bin
+
+# Backup de diseño de documentos
+DocumentLayout*.json
+
+# Publicaciones y paquetes
+publish/
+*.nupkg
+*.snupkg
+
+# Configuración de paquetes y restauración
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de configuración de GitHub Copilot
+.vscode/
+copilot*
+
+# Archivos generados por dotnet
+*.deps.json
+*.runtimeconfig.json
+*.xml
+*.cache
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
