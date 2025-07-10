@@ -1,10 +1,43 @@
-# Carpetas de Visual Studio y compilación
 .vs/
-obj/
-bin/
-*.user
-*.suo
-*.cache
-*.db
+*.vsidx
+# Archivos y carpetas de caché y temporales
 *.log
-
+*.tmp
+*.temp
+*.cache
+.cache/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+# Archivos de lock y dependencias temporales
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+# Otros archivos temporales
+~$*
+*.swp
+*.bak
+*.orig
+*.old
+*.rej
+*.sublime-workspace
+*.sublime-project
+# Archivos de test coverage
+coverage/
+.nyc_output/
+# Archivos de configuración local
+local.settings.json
