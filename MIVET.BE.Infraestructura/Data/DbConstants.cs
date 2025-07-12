@@ -11,8 +11,7 @@ public static class DbConstants
 
     public static class Tables
     {
-        //Añadir las tablas ejemplo debajo
-        //public const string Productos = nameof(Productos);
+       
         public const string  PersonaCliente = nameof(PersonaCliente);
         public const string TipoDocumento = nameof(TipoDocumento);
         public const string Mascota = nameof(Mascota);
