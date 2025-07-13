@@ -278,9 +278,6 @@ namespace MIVET.BE.Servicios
             if (cita.EstadoCita == EstadoCita.Cancelada)
                 throw new InvalidOperationException("No se puede completar una cita cancelada");
 
-            if (cita.FechaCita > DateTime.Today)
-                throw new InvalidOperationException("No se puede completar una cita futura");
-
             return await _citaRepository.CompletarCitaAsync(citaId);
         }
 

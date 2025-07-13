@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace MIVET.BE.Transversales;
 
@@ -17,4 +12,15 @@ public class UsuarioDTO
     public char Estado { get; set; }
     public string RolId { get; set; }
     public string Correos { get; set; }
+
+    // ⬅️ Agregar campos adicionales
+    public string PrimerNombre { get; set; }
+    public string SegundoNombre { get; set; }
+    public string PrimerApellido { get; set; }
+    public string SegundoApellido { get; set; }
+    public string CorreoElectronico { get; set; }
+    public string Telefono { get; set; }
+    public string Celular { get; set; }
+    public string Direccion { get; set; }
+    public string Ciudad { get; set; }
 }
