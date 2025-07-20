@@ -432,6 +432,8 @@ namespace MIVET.BE.Servicios
                 errores.Add("La duración debe ser múltiplo de 15 minutos");
 
             // Validar horario del veterinario
+            var test = _citaRepository.ObtenerPorVeterinarioAsync(crearDto.MedicoVeterinarioNumeroDocumento);
+            var test2 = _citaRepository.ObtenerTodosAsync();
             var horaFin = crearDto.HoraInicio.Add(TimeSpan.FromMinutes(crearDto.DuracionMinutos));
             if (!await _citaRepository.VeterinarioTieneHorarioAsync(
                 crearDto.MedicoVeterinarioNumeroDocumento,

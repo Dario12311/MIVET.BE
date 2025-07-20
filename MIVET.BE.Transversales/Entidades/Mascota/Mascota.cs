@@ -20,5 +20,6 @@ public class Mascota
 
     [JsonIgnore]
     public PersonaCliente PersonaCliente { get; set; }
-
+    public char Sexo { get; set; } = ' ';
+    public DateTime FechaNacimiento { get; set; } = DateTime.MinValue;
 }
