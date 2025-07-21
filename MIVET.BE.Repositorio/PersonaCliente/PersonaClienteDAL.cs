@@ -54,7 +54,7 @@ public class PersonaClienteDAL : IPersonaClienteDAL
     {
         try
         {
-            var entity = await _context.Set<PersonaCliente>().FirstOrDefaultAsync(pc => pc.NumeroDocumento == numeroDocumento);
+            var entity = await _context.PersonaCliente.FirstOrDefaultAsync(pc => pc.NumeroDocumento == numeroDocumento);
             if (entity == null)
             {
                 throw new KeyNotFoundException($"No se encontró un PersonaCliente con el Número de Documento: {numeroDocumento}");
@@ -71,7 +71,12 @@ public class PersonaClienteDAL : IPersonaClienteDAL
     {
         try
         {
-            await _context.Set<PersonaCliente>().AddAsync(personaCliente);
+            var entity = await _context.PersonaCliente.FirstOrDefaultAsync(pc => pc.NumeroDocumento == personaCliente.NumeroDocumento);
+            if (entity != null)
+            {
+                return personaCliente;
+            }
+            _context.PersonaCliente.Add(personaCliente);
             await _context.SaveChangesAsync();
             return personaCliente;
         }
@@ -89,17 +94,13 @@ public class PersonaClienteDAL : IPersonaClienteDAL
     {
         try
         {
-            _context.Set<PersonaCliente>().Update(personaCliente);
+            _context.PersonaCliente.Update(personaCliente);
             await _context.SaveChangesAsync();
             return personaCliente;
         }
-        catch (DbUpdateException ex)
-        {
-            throw new Exception("Error al actualizar los datos de la PersonaCliente. Verifica las restricciones de la base de datos.", ex);
-        }
         catch (Exception ex)
         {
-            throw new Exception("Ocurrió un error inesperado al actualizar los datos de la PersonaCliente.", ex);
+            throw new Exception($"Ocurrió un error inesperado al actualizar los datos de la PersonaCliente. {ex.Message}", ex);
         }
     }
 

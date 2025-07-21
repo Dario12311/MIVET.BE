@@ -28,10 +28,18 @@ namespace MIVET.BE.Controllers.productos
         [HttpGet("{id}")]
         public async Task<ActionResult<Transversales.Productos>> GetById(int id)
         {
-            var producto = await _productosBLL.GetByIdAsync(id);
-            if (producto == null)
+            try
+            {
+                var producto = await _productosBLL.GetByIdAsync(id);
+                if (producto == null)
+                    return NotFound();
+                return producto;
+            }
+            catch(Exception ex)
+            {
                 return NotFound();
-            return producto;
+            }
+
         }
 
         [HttpPost]

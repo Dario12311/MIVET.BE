@@ -97,79 +97,45 @@ public class MedicoVeterinarioDAL : IMedicoVeterinarioDAL
         }
     }
 
-    //public async Task<MedicoVeterinarioDTO> UpdateAsync(MedicoVeterinarioDTO medicoVeterinarioDTO)
-    //{
-    //    try
-    //    {
-    //        Console.WriteLine($"Intentando actualizar veterinario con NumeroDocumento: {medicoVeterinarioDTO.NumeroDocumento}");
-
-    //        var entity = await _context.Set<MedicoVeterinario>()
-    //            .FirstOrDefaultAsync(mv => mv.NumeroDocumento == medicoVeterinarioDTO.NumeroDocumento);
-
-    //        if (entity == null)
-    //        {
-    //            Console.WriteLine($"No se encontró un veterinario con el NumeroDocumento: {medicoVeterinarioDTO.NumeroDocumento}");
-    //            throw new KeyNotFoundException($"No se encontró un veterinario con el NumeroDocumento: {medicoVeterinarioDTO.NumeroDocumento}");
-    //        }
-
-    //        Console.WriteLine($"Veterinario encontrado, procediendo a actualizar");
-
-    //        if (!DateTime.TryParseExact(medicoVeterinarioDTO.AñoGraduacion, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime añoGraduacion))
-    //        {
-    //            throw new Exception($"Formato de fecha inválido para AñoGraduacion: {medicoVeterinarioDTO.AñoGraduacion}. Use el formato yyyy-MM-dd.");
-    //        }
-
-    //        if (!DateTime.TryParseExact(medicoVeterinarioDTO.FechaNacimiento, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime fechaNacimiento))
-    //        {
-    //            throw new Exception($"Formato de fecha inválido para FechaNacimiento: {medicoVeterinarioDTO.FechaNacimiento}. Use el formato yyyy-MM-dd.");
-    //        }
-
-    //        entity.Nombre = medicoVeterinarioDTO.Nombre;
-    //        entity.EstadoCivil = medicoVeterinarioDTO.EstadoCivil;
-    //        entity.TipoDocumentoId = medicoVeterinarioDTO.TipoDocumentoId;
-    //        entity.Especialidad = medicoVeterinarioDTO.Especialidad;
-    //        entity.Telefono = medicoVeterinarioDTO.Telefono;
-    //        entity.CorreoElectronico = medicoVeterinarioDTO.CorreoElectronico;
-    //        entity.Direccion = medicoVeterinarioDTO.Direccion;
-    //        entity.UniversidadGraduacion = medicoVeterinarioDTO.UniversidadGraduacion;
-    //        entity.AñoGraduacion = añoGraduacion.Date;
-    //        entity.FechaNacimiento = fechaNacimiento.Date;
-    //        entity.nacionalidad = medicoVeterinarioDTO.nacionalidad;
-    //        entity.genero = medicoVeterinarioDTO.genero;
-    //        entity.ciudad = medicoVeterinarioDTO.ciudad;
-    //        entity.Estado = medicoVeterinarioDTO.Estado;
-
-    //        Console.WriteLine($"Actualizando entidad: {System.Text.Json.JsonSerializer.Serialize(entity)}");
-    //        await _context.SaveChangesAsync();
-
-    //        return medicoVeterinarioDTO;
-    //    }
-    //    catch (DbUpdateException ex)
-    //    {
-    //        Console.WriteLine($"DbUpdateException: {ex.Message}");
-    //        if (ex.InnerException != null)
-    //        {
-    //            Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
-    //        }
-    //        throw new Exception("Error al actualizar los datos del Veterinario. Verifica las restricciones de la base de datos.", ex);
-    //    }
-    //    catch (KeyNotFoundException ex)
-    //    {
-    //        throw;
-    //    }
-    //    catch (Exception ex)
-    //    {
-    //        Console.WriteLine($"Exception: {ex.Message}");
-    //        Console.WriteLine($"Stack Trace: {ex.StackTrace}");
-    //        throw new Exception("Ocurrió un error inesperado al actualizar los datos del Veterinario.", ex);
-    //    }
-    //}
-
-    public async Task<MedicoVeterinarioDTO> InsertAsync(MedicoVeterinarioDTO medicoVeterinarioDTO)
+    public async Task<MedicoVeterinario> UpdateAsync(MedicoVeterinario medicoVeterinarioDTO)
     {
         try
         {
-            await _context.Set<MedicoVeterinarioDTO>().AddAsync(medicoVeterinarioDTO);
+            await _context.SaveChangesAsync();
+
+            return medicoVeterinarioDTO;
+        }
+        catch (DbUpdateException ex)
+        {
+            Console.WriteLine($"DbUpdateException: {ex.Message}");
+            if (ex.InnerException != null)
+            {
+                Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+            }
+            throw new Exception("Error al actualizar los datos del Veterinario. Verifica las restricciones de la base de datos.", ex);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Exception: {ex.Message}");
+            Console.WriteLine($"Stack Trace: {ex.StackTrace}");
+            throw new Exception("Ocurrió un error inesperado al actualizar los datos del Veterinario.", ex);
+        }
+    }
+
+    public async Task<MedicoVeterinario> InsertAsync(MedicoVeterinario medicoVeterinarioDTO)
+    {
+        try
+        {
+            var existe = GetByIdAsync(medicoVeterinarioDTO.NumeroDocumento);
+            if (existe != null)
+            {
+                return medicoVeterinarioDTO;
+            }
+            _context.MedicoVeterinario.Add(medicoVeterinarioDTO);
             await _context.SaveChangesAsync();
             return medicoVeterinarioDTO;
         }

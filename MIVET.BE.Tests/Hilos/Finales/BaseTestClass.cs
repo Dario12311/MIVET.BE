@@ -282,9 +282,7 @@ namespace MIVET.BE.Tests.Hilos.Finales
                         Edad = 1 + (i % 8),
                         Genero = i % 2 == 0 ? "Macho" : "Hembra",
                         NumeroDocumento = i <= 30 ? "87654321" : "11111111",
-                        Estado = 'A',
-                        Sexo = i % 2 == 0 ? 'M' : 'F',
-                        FechaNacimiento = DateTime.Today.AddYears(-(1 + (i % 8)))
+                        Estado = 'A'
                     };
                     mascotas.Add(mascota);
                 }

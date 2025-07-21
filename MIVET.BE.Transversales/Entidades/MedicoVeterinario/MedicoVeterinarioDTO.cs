@@ -8,21 +8,21 @@ namespace MIVET.BE.Transversales.Entidades;
 
 public class MedicoVeterinarioDTO
 {
-    public int Id { get; set; }
-    public string Nombre { get; set; }
-    public string NumeroDocumento { get; set; }
-    public int EstadoCivil { get; set; }
-    public int TipoDocumentoId { get; set; }
-    public string Especialidad { get; set; }
-    public string Telefono { get; set; }
-    public string CorreoElectronico { get; set; }
-    public string Direccion { get; set; }
-    public DateTime FechaRegistro { get; set; }
-    public string UniversidadGraduacion { get; set; }
-    public DateTime AñoGraduacion { get; set; }
-    public DateTime FechaNacimiento { get; set; }
-    public string nacionalidad { get; set; }
-    public string genero { get; set; }
-    public string ciudad { get; set; }
-    public string Estado { get; set; }
+    public int Id { get; set; } = 0;
+    public string Nombre { get; set; } = string.Empty;
+    public string NumeroDocumento { get; set; } = string.Empty;
+    public int EstadoCivil { get; set; } = 0;
+    public int TipoDocumentoId { get; set; } = 0;
+    public string Especialidad { get; set; } = string.Empty;
+    public string Telefono { get; set; } = string.Empty;
+    public string CorreoElectronico { get; set; } = string.Empty;
+    public string Direccion { get; set; } = string.Empty;
+    public DateTime FechaRegistro { get; set; } = DateTime.Now;
+    public string UniversidadGraduacion { get; set; } = string.Empty;
+    public DateTime AñoGraduacion { get; set; } = DateTime.Now;
+    public DateTime FechaNacimiento { get; set; } = DateTime.Now;
+    public string nacionalidad { get; set; } = string.Empty;
+    public string genero { get; set; } = string.Empty;
+    public string ciudad { get; set; } = string.Empty;
+    public string Estado { get; set; } = string.Empty;
 }

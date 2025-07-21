@@ -96,6 +96,7 @@ public class MascotaDAL : IMascotasDAL
 
             await _context.Set<Mascota>().AddAsync(nuevaMascota);
             await _context.SaveChangesAsync();
+            mascotaDTO.Id = nuevaMascota.Id;
 
             return mascotaDTO;
         }
